@@ -1,13 +1,35 @@
 banner:
-  - link: https://www.royians.cn
-    name: ROYIANS
-    avatar: https://royians.netlify.app/images/avatar.gif
+  - link: http://106.55.229.185/
+    name: 小石头岛
+    avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
+  - link: https://kanochan.net
+    name: kano酱的博客
+    avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
+  - link: https://blog.zhheo.com/
+    name: 张洪Heo
+    avatar: https://p.zhheo.com/OWwtql25990281613802479556.png!cover_siteshot
+  - link: https://www.thyuu.com/
+    name: 风记星辰
+    avatar: https://p.zhheo.com/x48cF423191281640339671599.jpg!cover_siteshot
 
 links:
-  - class_name: ROYIANS
-    descr: ROYIANS
+  - class_name: Star星选
+    descr: 初次相识的友友们
+    type: item
     link_list:
-      - link: https://royians.netlify.app/images/avatar.gif
-      - name: ROYIANS
-      - avatar: https://royians.netlify.app/images/avatar.gif
-      - descr: ROYIANS
+      - link: http://106.55.229.185/
+        name: 小石头岛
+        avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
+        descr: 欢迎光临小石石石头岛
+      - link: https://kanochan.net
+        name: kano酱的博客
+        avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
+        descr: 只要你喜欢kano，我们就是好朋友！
+      - link: https://blog.zhheo.com/
+        name: 张洪Heo
+        avatar: https://p.zhheo.com/OWwtql25990281613802479556.png!cover_siteshot
+        descr: 产品设计师，独立开发者，设计与科技分享
+      - link: https://www.thyuu.com/
+        name: 风记星辰
+        avatar: https://p.zhheo.com/x48cF423191281640339671599.jpg!cover_siteshot
+        descr: 设计师，有着优秀设计与交互的记录生活的博客

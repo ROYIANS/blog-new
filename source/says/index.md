@@ -5,5 +5,5 @@ comments: true
 aside: false
 type: says
 cover: /img/cover/tittle-tattle-cover.jpg
-desc: 记录自己的零零碎碎
+desc: 记录生活的点点滴滴
 ---

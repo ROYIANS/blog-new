@@ -1,8 +1,7 @@
 site:
   name: ROY
-  siteIcon: https://royians.netlify.app/images/logo.png
-  icon: https://royians.netlify.app/images/avatar.gif
-  icp: 萌ICP20230310666
+  siteIcon: /img/royians/logo.png
+  icon: /img/royians/avatar.gif
 
 
 nav:
@@ -39,8 +38,8 @@ nav:
 
   right: # @todo 允许用户自定义
     travellings: true
-    random: false
-    search: false
+    random: true
+    search: true
     console: true
 
 
@@ -48,7 +47,7 @@ hometop:
   bbtime: true
   banner:
     title: 记录生活<br>的点点滴滴
-    url: blog.royians.cn
+    url: little-dream.land
     icon:
       AE:
         img: /img/icon/ae.png
@@ -105,7 +104,7 @@ hometop:
     sup: 置顶文章
     title: 你好 2023
     url: /2023-03-10/hello-2023/
-    img: https://www.royians.cn/assets/images/profile2.png
+    img: /img/2023.jpg
     color: '#009688'
 
 
@@ -121,7 +120,7 @@ aside:
         url: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc1NDIzNA==&scene=124#wechat_redirect
     button:
       text: 个人主页
-      url: https://www.royains.cn/
+      url: https://www.royians.cn/
 
   analytics:
     runtime: '2018-01-01 00:00:00'
@@ -149,7 +148,7 @@ footer:
       文章归档: /archives/
       文章分类: /categories/
       文章标签: /tags/
-      友链: /link/
+      友链: /links/
     其他网页:
       PROGRAMADOR: https://programador.cn/
       VIDORRA: https://vidorra.cn/
@@ -159,7 +158,7 @@ footer:
       Heo: https://blog.zhheo.com/
       Akilar: https://akilar.top
 
-  ramdonlink: false
+  ramdonlink: true
 
 
 post:
@@ -175,7 +174,7 @@ post:
 
 
 errorpage:
-  img: https://www.royians.cn/assets/images/profile2.png
+  img: /img/404.jpg
   text: =qwq= 你好像迷路了
   recommendList: true
 
@@ -192,13 +191,15 @@ thirdparty:
 comment:
   enable: true
   twikoo:
-    envId: https://twikoo-zeabur-production-3793.up.railway.app/
+    envId: https://twikoo.little-dream.land/
     visitor: true
 
 
 extends: # 插入额外代码 如：统计，广告等
   head: # 在head中插入
      - <link href="/fonts/remixicon.css" rel="stylesheet">
+     - <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?fe2db955cb6ff96a6e53b812ac5e9559";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+     - <!--Google tag(gtag.js)--><script async src="https://www.googletagmanager.com/gtag/js?id=G-8CY7HEN598"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8CY7HEN598');</script>
   body: # 在body中插入
 
 

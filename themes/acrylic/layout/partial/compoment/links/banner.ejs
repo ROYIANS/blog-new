@@ -7,7 +7,7 @@
         <i class="fas fa-shuffle"></i>
         <span class="banner-button-text">随机访问</span>
     </a>
-    <a class="banner-button" onclick="addFriendLink()" href="javascript:;" rel="external nofollow">
+    <a class="banner-button" onclick="utils.snackbarShow('维护中，暂停友链')" href="javascript:;" rel="external nofollow">
         <i class="fas fa-circle-chevron-right"></i>
         <span class="banner-button-text">申请友链</span>
     </a>
@@ -19,14 +19,14 @@
            <% data.forEach((item,index) => { %>
                 <% if(index % 2 == 0){ %>
                     <div class="tags-group-icon-pair">
-                <% } %>    
+                <% } %>
                     <a class="tags-group-icon" href="<%= url_for(item.link) %>" title="<%= item.name %>">
                         <img src="<%= item.avatar %>" title="<%= item.name %>" loading="lazy">
                     </a>
                 <% if(index % 2 == 1){ %>
                     </div>
-                <% } %>    
-            <% }); %> 
-        <% } %>    
+                <% } %>
+            <% }); %>
+        <% } %>
     </div>
 </div>
