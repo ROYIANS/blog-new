@@ -1,0 +1,218 @@
+site:
+  name: ROY
+  siteIcon: https://royians.netlify.app/images/logo.png
+  icon: https://royians.netlify.app/images/avatar.gif
+  icp: 萌ICP20230310666
+
+
+nav:
+  left:
+    enable: true
+    menu:
+      我的:
+        个人主页:
+          icon: /img/avatar.webp
+          url: https://www.royains.cn/
+
+  menu:
+    文库:
+      url: false
+      child:
+        文章列表:
+          url: /archives/
+          icon: ri-archive-fill
+        全部分类:
+          url: /categories/
+          icon: ri-apps-fill
+        全部标签:
+          url: /tags/
+          icon: ri-price-tag-3-fill
+    友链:
+      url: false
+      child:
+        友情链接:
+          url: /links/
+          icon: ri-link-m
+        宝藏博主:
+          url: javascript:travelling()
+          icon: ri-star-smile-fill
+
+  right: # @todo 允许用户自定义
+    travellings: true
+    random: false
+    search: false
+    console: true
+
+
+hometop:
+  bbtime: true
+  banner:
+    title: 记录生活<br>的点点滴滴
+    url: blog.royians.cn
+    icon:
+      AE:
+        img: /img/icon/ae.png
+        color: '#989bf8'
+      Sketch:
+        img: /img/icon/Sketch.png
+        color: '#ffffff'
+      Docker:
+        img: /img/icon/docker.png
+        color: '#57b6e6'
+      ps:
+        img: /img/icon/ps.png
+        color: '#4082c3'
+      FinalCutPro:
+        img: /img/icon/FinalCutPro.png
+        color: '#ffffff'
+      Python:
+        img: /img/icon/Python.png
+        color: '#ffffff'
+      Swift:
+        img: /img/icon/Swift.png
+        color: '#eb6840'
+      Principle:
+        img: /img/icon/Principle.png
+        color: '#8f55ba'
+      illustrator:
+        img: /img/icon/illustrator.png
+        color: '#f29e39'
+      CSS3:
+        img: /img/icon/CSS3.png
+        color: '#2c51db'
+      JS:
+        img: /img/icon/JS.png
+        color: '#f7cb4f'
+      Git:
+        img: /img/icon/git.png
+        color: '#df5b40'
+
+  categoryGroup:
+    G1:
+      name: 随摄
+      icon: ri-dv-fill
+      url: /tags/随摄/
+    G2:
+      name: 随想
+      icon: ri-user-voice-fill
+      url: /tags/随想/
+    G3:
+      name: 随记
+      icon: ri-book-2-fill
+      url: /tags/随记/
+
+  recommendList:
+    sup: 置顶文章
+    title: 你好 2023
+    url: /2023-03-10/hello-2023/
+    img: https://www.royians.cn/assets/images/profile2.png
+    color: '#009688'
+
+
+aside:
+  card:
+    content: 欢迎来到<b>小梦岛</b>，这里记录我的<b>日常生活</b>、<b>个人想法</b>和<b>学习记录</b><br>感谢你参观我的博客，我使用的博客主题是<b><a href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" target="_blank">Acrylic</a></b>。
+    information:
+      Github:
+        icon: ri-github-fill
+        url: https://github.com/ROYIANS
+      微信公众号:
+        icon: ri-wechat-2-fill
+        url: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc1NDIzNA==&scene=124#wechat_redirect
+    button:
+      text: 个人主页
+      url: https://www.royains.cn/
+
+  analytics:
+    runtime: '2018-01-01 00:00:00'
+
+
+footer:
+  information:
+    left:
+      微博:
+        icon: ri-weibo-line
+        url: https://weibo.com/u/6319184855
+      哔哩哔哩:
+        icon: ri-bilibili-line
+        url: https://space.bilibili.com/32267413
+    right:
+      网易云:
+        icon: ri-netease-cloud-music-line
+        url: https://y.music.163.com/m/user?id=356590959&dlt=0846&app_version=8.9.10
+      tg:
+        icon: ri-telegram-line
+        url: https://t.me/s/littleDreamlandPlus
+
+  group:
+    导航:
+      文章归档: /archives/
+      文章分类: /categories/
+      文章标签: /tags/
+      友链: /link/
+    其他网页:
+      PROGRAMADOR: https://programador.cn/
+      VIDORRA: https://vidorra.cn/
+    个人项目:
+      打印模板设计器: https://gitee.com/ROYIANS/print-template-designer
+    推荐友链:
+      Heo: https://blog.zhheo.com/
+      Akilar: https://akilar.top
+
+  ramdonlink: false
+
+
+post:
+  default:
+    cover: /img/hello.jpg
+    locate: 太原
+    copyright: 原创
+  award:
+    enable: false
+    wechat:
+    alipay:
+    url:
+
+
+errorpage:
+  img: https://www.royians.cn/assets/images/profile2.png
+  text: =qwq= 你好像迷路了
+  recommendList: true
+
+
+loading:
+  enable: false
+  pace: true
+
+
+thirdparty:
+  wordcount: true
+
+
+comment:
+  enable: true
+  twikoo:
+    envId: https://twikoo-zeabur-production-3793.up.railway.app/
+    visitor: true
+
+
+extends: # 插入额外代码 如：统计，广告等
+  head: # 在head中插入
+     - <link href="/fonts/remixicon.css" rel="stylesheet">
+  body: # 在body中插入
+
+
+cdn:
+  head:
+    pacejs: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js
+    fontawesomecss: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css
+    snackbarcss: /lib/snackbar.min.css
+    qrcodejs: /lib/qrcode.min.js
+    twikoojs: https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js
+  body:
+    swipercss: /lib/swiper.min.css
+    pjaxjs: /lib/pjax.min.js
+    snackbarjs: /lib/snackbar.min.js
+    viewimagejs: /lib/view-image.min.js
+    waterfalljs: /lib/waterfall.min.js
+    swiperjs: /lib/swiper.min.js

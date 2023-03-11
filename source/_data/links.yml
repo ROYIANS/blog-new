@@ -1,0 +1,13 @@
+banner:
+  - link: https://www.royians.cn
+    name: ROYIANS
+    avatar: https://royians.netlify.app/images/avatar.gif
+
+links:
+  - class_name: ROYIANS
+    descr: ROYIANS
+    link_list:
+      - link: https://royians.netlify.app/images/avatar.gif
+      - name: ROYIANS
+      - avatar: https://royians.netlify.app/images/avatar.gif
+      - descr: ROYIANS
