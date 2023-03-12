@@ -1,17 +1,12 @@
-<div align="right">
-  语言:
-  中文
-</div>
-
-# hexo-theme-Acrylic
+# Hexo-Theme-Acrylic-Next
 
 ![封面图](https://raw.githubusercontent.com/hexo-theme-Acrylic/JS-Acrylic/main/hhis5p.webp)
 
-主题预览:  🤟[Heo](https://blog.zhheo.com/) ||  👍 [满心](https://blog.lovelu.top/)  ||  🤞 [Jayhrn](https://blog.jayhrn.com/)
+下一代Acrylic何必是butterfly
 
-文档: 📖 [https://acrylic.zhheo.com/](https://acrylic.zhheo.com/)
+主题预览:  🤟[Heo](https://blog.zhheo.com/) 👋[acrylic](https://b.iz.ink/) 
 
-一款基于[hexo-theme-butterfly](https://github.com/jerryc127/hexo-theme-butterfly)修改的主题
+文档: [📖文档](https://d.iz.ink/)
 
 ## 💻 安裝
 
@@ -20,18 +15,8 @@
 在博客根目录里安装稳定版【推荐】
 
 ```powershell
-git clone -b main https://github.com/hexo-theme-Acrylic/hexo-theme-Acrylic.git themes/Acrylic
+git clone -b main https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next.git themes/Acrylic
 ```
-
-在博客根目录里安装最新版【推荐】
-
-```powershell
-git clone -b dev https://github.com/hexo-theme-Acrylic/hexo-theme-Acrylic.git themes/Acrylic
-```
-
-### npm 安裝
-
-暂不支持，因为我不会
 
 ## ⚙ 应用主题
 
@@ -41,7 +26,14 @@ git clone -b dev https://github.com/hexo-theme-Acrylic/hexo-theme-Acrylic.git th
 theme: Acrylic
 ```
 
->如果你没有pug以及stylus的渲染器，请下载安装： ```npm install hexo-renderer-pug hexo-renderer-stylus --save```
+## 更好的配置
+- macos/linux
+在博客根目录运行
+```bash
+cp -rf ./themes/Acrylic/_config.yml ./_config.Acrylic.yml
+```
+- windows
+复制```/themes/Acrylic/_config.yml```此文件到hexo根目录，并重命名为```_config.Acrylic.yml```
 
 ## ✨ 贡献者
 > 欢迎你加入我们Acrylic组织
@@ -57,25 +49,11 @@ theme: Acrylic
 [@时贰姐姐](https://github.com/GC-ZF)
 ### 服务器提供和测试
 [@Acozycotage](https://github.com/Acozycotage)
-### 相关帮助
-暂无
 ### 主题设计
 [@张洪Heo](https://github.com/zhheo)
 ### 域名提供
 [@张洪Heo](https://github.com/zhheo)
 [@Acozycotage](https://github.com/Acozycotage)
 
-## 开发进度
-50%
-
-## 更好的配置
-- macos/linux
-在博客根目录运行
-```bash
-cp -rf ./themes/Acrylic/_config.yml ./_config.Acrylic.yml
-```
-- windows
-复制```/themes/Acrylic/_config.yml```此文件到hexo根目录，并重命名为```_config.Acrylic.yml```
-
 ## 仓库统计
-![仓库统计](https://repobeats.axiom.co/api/embed/d7b318f1bf6a566495cf126196194f6145ee63a6.svg "Repobeats analytics image")
+![仓库统计](https://repobeats.axiom.co/api/embed/1fa853ba335ad40fe11d3c2964e37220f4c3fab5.svg "Repobeats analytics image")
