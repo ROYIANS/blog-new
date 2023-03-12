@@ -40,10 +40,10 @@
 }
 
 [data-theme=light] {
-  --heo-theme: #009688;
-  --heo-theme-op: #00968823;
-  --heo-theme-op-deep: #009688dd;
-  --heo-theme-none: #00968801;
+  --heo-theme: #425AEF;
+  --heo-theme-op: #4259ef23;
+  --heo-theme-op-deep: #4259efdd;
+  --heo-theme-none: #4259ef01;
   --heo-blue: #425AEF;
   --heo-red: #f04a63;
   --heo-pink: #FF7C7C;
@@ -82,10 +82,10 @@
 }
 
 [data-theme=dark] {
-  --heo-theme: #425AEF;
-  --heo-theme-op: #4259ef23;
-  --heo-theme-op-deep: #4259efdd;
-  --heo-theme-none: #4259ef01;
+  --heo-theme: #f2b94b;
+  --heo-theme-op: #f2b94b23;
+  --heo-theme-op-deep: #f2b94bdd;
+  --heo-theme-none: #f2b94b00;
   --heo-blue: #0084FF;
   --heo-red: #FF3842;
   --heo-pink: #d44040;

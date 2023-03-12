@@ -1,7 +1,7 @@
 site:
-  name: ROY
-  siteIcon: /img/royians/logo.png
-  icon: /img/royians/avatar.gif
+  name: Rot
+  icon: /img/avatar.webp
+  icp:
 
 
 nav:
@@ -9,45 +9,48 @@ nav:
     enable: true
     menu:
       我的:
-        个人主页:
+        博客:
           icon: /img/avatar.webp
-          url: https://www.royains.cn/
+          url: /
 
   menu:
-    文库:
-      url: false
-      child:
-        文章列表:
-          url: /archives/
-          icon: ri-archive-fill
-        全部分类:
-          url: /categories/
-          icon: ri-apps-fill
-        全部标签:
-          url: /tags/
-          icon: ri-price-tag-3-fill
-    友链:
-      url: false
-      child:
-        友情链接:
-          url: /links/
-          icon: ri-link-m
-        宝藏博主:
-          url: javascript:travelling()
-          icon: ri-star-smile-fill
+    # 文库:
+    #   url: false
+    #   child:
+    #     文章列表:
+    #       url: /archives/
+    #       icon: fas fa-box-archive
+    #     全部分类:
+    #       url: /categories/
+    #       icon: fas fa-cube
+    #     全部标签:
+    #       url: /tags/
+    #       icon: fas fa-tags
+    # 友链:
+    #   url: false
+    #   child:
+    #     友链鱼塘:
+    #       url: /fcircle/
+    #       icon: fas fa-fish-fins
+    #     友情链接:
+    #       url: /links/
+    #       icon: fas fa-user-group
+    #     宝藏博主:
+    #       url: javascript:travelling()
+    #       icon: fas fa-bus
 
   right: # @todo 允许用户自定义
     travellings: true
     random: true
-    search: true
+    search: false
     console: true
 
 
 hometop:
-  bbtime: true
+  bbtime: false
   banner:
-    title: 记录生活<br>的点点滴滴
-    url: little-dream.land
+    title: 分享设计<br>与科技生活
+    url: blog.zhheo.com
     icon:
       AE:
         img: /img/icon/ae.png
@@ -88,83 +91,86 @@ hometop:
 
   categoryGroup:
     G1:
-      name: 随摄
-      icon: ri-dv-fill
-      url: /tags/随摄/
+      name: Acrylic
+      icon: fas fa-dove
+      url: /tags/Acrylic/
     G2:
-      name: 随想
-      icon: ri-user-voice-fill
-      url: /tags/随想/
+      name: 热门文章
+      icon: fas fa-burn
+      url: /tags/热门/
     G3:
-      name: 随记
-      icon: ri-book-2-fill
-      url: /tags/随记/
+      name: 实用教程
+      icon: fas fa-book
+      url: /tags/教程/
 
   recommendList:
     sup: 置顶文章
-    title: 你好 2023
-    url: /2023-03-10/hello-2023/
-    img: /img/2023.jpg
-    color: '#009688'
+    title: 让Acrylic成为您的Hexo主题
+    url: /
+    img: /img/acrylic.png
+    color: '#006a73'
 
 
 aside:
   card:
-    content: 欢迎来到<b>小梦岛</b>，这里记录我的<b>日常生活</b>、<b>个人想法</b>和<b>学习记录</b><br>感谢你参观我的博客，我使用的博客主题是<b><a href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" target="_blank">Acrylic</a></b>。
+    content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
     information:
       Github:
-        icon: ri-github-fill
-        url: https://github.com/ROYIANS
-      微信公众号:
-        icon: ri-wechat-2-fill
-        url: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc1NDIzNA==&scene=124#wechat_redirect
+        icon: fa-brands fa-github
+        url: https://github.com/rootlexblog
+      Mail:
+        icon: fa-solid fa-envelope
+        url: mailto:a@nalex.top
     button:
       text: 个人主页
-      url: https://www.royians.cn/
+      url: /
 
   analytics:
-    runtime: '2018-01-01 00:00:00'
+    runtime: '2021-12-12 00:00:00'
 
 
 footer:
   information:
     left:
-      微博:
-        icon: ri-weibo-line
-        url: https://weibo.com/u/6319184855
-      哔哩哔哩:
-        icon: ri-bilibili-line
-        url: https://space.bilibili.com/32267413
+      Github:
+        icon: fa-brands fa-github
+        url: /
+      Mail:
+        icon: fa-solid fa-envelope
+        url: /
     right:
       网易云:
-        icon: ri-netease-cloud-music-line
-        url: https://y.music.163.com/m/user?id=356590959&dlt=0846&app_version=8.9.10
-      tg:
-        icon: ri-telegram-line
-        url: https://t.me/s/littleDreamlandPlus
+        icon: fa-solid fa-music
+        url: /
+      bilibili:
+        icon: fa-brands fa-bilibili
+        url: /
 
   group:
     导航:
       文章归档: /archives/
       文章分类: /categories/
       文章标签: /tags/
-      友链: /links/
-    其他网页:
-      PROGRAMADOR: https://programador.cn/
-      VIDORRA: https://vidorra.cn/
-    个人项目:
-      打印模板设计器: https://gitee.com/ROYIANS/print-template-designer
+      友链: /link/
+    服务:
+      51la统计: https://51.la/
+      百度统计: https://tongji.baidu.com/
+      TianliCDN: https://ql.tianli0.top/
+    Acrylic:
+      主题官网: https://acrylic.zhheo.com/
+      Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
+      Heo: https://blog.zhheo.com/
     推荐友链:
       Heo: https://blog.zhheo.com/
       Akilar: https://akilar.top
 
-  ramdonlink: true
+  ramdonlink: false
 
 
 post:
   default:
     cover: /img/hello.jpg
-    locate: 太原
+    locate: 北京
     copyright: 原创
   award:
     enable: false
@@ -174,8 +180,8 @@ post:
 
 
 errorpage:
-  img: /img/404.jpg
-  text: =qwq= 你好像迷路了
+  img: /img/acrylic.png
+  text: =awa= 页面走丢了
   recommendList: true
 
 
@@ -185,21 +191,18 @@ loading:
 
 
 thirdparty:
-  wordcount: true
+  wordcount: false
 
 
 comment:
-  enable: true
+  enable: false
   twikoo:
-    envId: https://twikoo.little-dream.land/
-    visitor: true
+    envId:
 
 
 extends: # 插入额外代码 如：统计，广告等
   head: # 在head中插入
-     - <link href="/fonts/remixicon.css" rel="stylesheet">
-     - <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?fe2db955cb6ff96a6e53b812ac5e9559";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
-     - <!--Google tag(gtag.js)--><script async src="https://www.googletagmanager.com/gtag/js?id=G-8CY7HEN598"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8CY7HEN598');</script>
+    # - <script></script>
   body: # 在body中插入
 
 
