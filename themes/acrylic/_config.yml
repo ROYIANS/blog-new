@@ -1,10 +1,14 @@
+# 站点设置
 site:
-  name: ROY
-  siteIcon: /img/royians/logo.png
-  icon: /img/royians/avatar.gif
+  name: ROY               # 左上角首页名称
+  icon: /img/royians/avatar.gif # 页脚的icon
+  icp:                    # ICP
+  siteIcon: /img/royians/logo.png # 主页的icon
 
 
+# 导航栏
 nav:
+#导航栏左侧
   left:
     enable: true
     menu:
@@ -12,7 +16,7 @@ nav:
         个人主页:
           icon: /img/avatar.webp
           url: https://www.royains.cn/
-
+# 导航栏内容
   menu:
     文库:
       url: false
@@ -36,6 +40,7 @@ nav:
           url: javascript:travelling()
           icon: ri-star-smile-fill
 
+# 导航栏右侧快捷菜单
   right: # @todo 允许用户自定义
     travellings: true
     random: true
@@ -43,6 +48,7 @@ nav:
     console: true
 
 
+# heo式顶部一大坨
 hometop:
   bbtime: true
   banner:
@@ -107,7 +113,7 @@ hometop:
     img: /img/2023.jpg
     color: '#009688'
 
-
+# 个人卡片
 aside:
   card:
     content: 欢迎来到<b>小梦岛</b>，这里记录我的<b>日常生活</b>、<b>个人想法</b>和<b>学习记录</b><br>感谢你参观我的博客，我使用的博客主题是<b><a href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" target="_blank">Acrylic</a></b>。
@@ -121,11 +127,11 @@ aside:
     button:
       text: 个人主页
       url: https://www.royians.cn/
-
+# 建站时间
   analytics:
     runtime: '2018-01-01 00:00:00'
 
-
+# 页脚
 footer:
   information:
     left:
@@ -161,48 +167,57 @@ footer:
   ramdonlink: true
 
 
+# 文章页默认设置
 post:
   default:
     cover: /img/hello.jpg
     locate: 太原
     copyright: 原创
+    excerpt: 100
   award:
     enable: false
     wechat:
     alipay:
     url:
 
-
+# 404
 errorpage:
   img: /img/404.jpg
   text: =qwq= 你好像迷路了
   recommendList: true
 
+# 懒加载
+lazyload:
+  enable: false
+  placeholder: /img/acrylic.png
+  errorimg: /img/acrylic.png
 
+# 加载动画
 loading:
   enable: false
-  pace: true
+  pace: false
 
-
+# 第三方设置
 thirdparty:
   wordcount: true
 
-
+# 评论
 comment:
   enable: true
   twikoo:
     envId: https://twikoo.little-dream.land/
     visitor: true
 
-
-extends: # 插入额外代码 如：统计，广告等
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# 插入额外代码 如：统计，广告等
+extends: 
   head: # 在head中插入
      - <link href="/fonts/remixicon.css" rel="stylesheet">
      - <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?fe2db955cb6ff96a6e53b812ac5e9559";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
      - <!--Google tag(gtag.js)--><script async src="https://www.googletagmanager.com/gtag/js?id=G-8CY7HEN598"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8CY7HEN598');</script>
   body: # 在body中插入
 
-
+# 非必要勿动
 cdn:
   head:
     pacejs: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js
@@ -213,6 +228,7 @@ cdn:
   body:
     swipercss: /lib/swiper.min.css
     pjaxjs: /lib/pjax.min.js
+    lazyloadjs: /lib/lazyload.min.js
     snackbarjs: /lib/snackbar.min.js
     viewimagejs: /lib/view-image.min.js
     waterfalljs: /lib/waterfall.min.js
