@@ -1,5 +1,5 @@
 ---
-title: 解决浏览器端 globalThis is not defined 报错
+title: 解决 ChunkLoadError Loading chunk xx failed 报错
 categories: 技术碎片
 tag:
   - 前端
@@ -10,6 +10,7 @@ cover: /img/2023/01/0501.jpg
 abbrlink: 2023010501
 date: 2023-01-05
 recommend: true
+cc: 原创
 ---
 
 ## 问题的出现
