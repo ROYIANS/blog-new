@@ -2,15 +2,21 @@ banner:
   - link: http://106.55.229.185/
     name: 小石头岛
     avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
-  - link: https://kanochan.net
+  - link: https://kanochan.net/
     name: kano酱的博客
     avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
   - link: https://blog.zhheo.com/
     name: 张洪Heo
-    avatar: https://p.zhheo.com/OWwtql25990281613802479556.png!cover_siteshot
+    avatar: https://s2.loli.net/2023/03/17/zjStVyHpY9nGEDo.png
   - link: https://www.thyuu.com/
     name: 风记星辰
-    avatar: https://p.zhheo.com/x48cF423191281640339671599.jpg!cover_siteshot
+    avatar: https://s2.loli.net/2023/03/17/CQ61vzlTdA2Lrab.webp
+  - link: https://www.rz.sb/
+    name: 若志随笔
+    avatar: https://s2.loli.net/2023/03/17/YxEwiuhjdS6CJLo.webp
+  - link: https://www.ihewro.com/
+    name: 友人C
+    avatar: https://s2.loli.net/2023/03/17/1QEk9rpMAig3mIy.jpg
 
 links:
   - class_name: Star星选
@@ -21,15 +27,23 @@ links:
         name: 小石头岛
         avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
         descr: 欢迎光临小石石石头岛
-      - link: https://kanochan.net
+      - link: https://kanochan.net/
         name: kano酱的博客
         avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
         descr: 只要你喜欢kano，我们就是好朋友！
       - link: https://blog.zhheo.com/
         name: 张洪Heo
-        avatar: https://p.zhheo.com/OWwtql25990281613802479556.png!cover_siteshot
+        avatar: https://s2.loli.net/2023/03/17/zjStVyHpY9nGEDo.png
         descr: 产品设计师，独立开发者，设计与科技分享
       - link: https://www.thyuu.com/
         name: 风记星辰
-        avatar: https://p.zhheo.com/x48cF423191281640339671599.jpg!cover_siteshot
+        avatar: https://s2.loli.net/2023/03/17/CQ61vzlTdA2Lrab.webp
         descr: 设计师，有着优秀设计与交互的记录生活的博客
+      - link: https://www.rz.sb/
+        name: 若志随笔
+        avatar: https://s2.loli.net/2023/03/17/YxEwiuhjdS6CJLo.webp
+        descr: 记点想记的东西，做点想做的事情
+      - link: https://www.ihewro.com/
+        name: 友人C
+        avatar: https://s2.loli.net/2023/03/17/1QEk9rpMAig3mIy.jpg
+        descr: 夜幽幽，月优优，曲悠悠，吾忧忧。
