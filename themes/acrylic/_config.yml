@@ -4,6 +4,7 @@ site:
   icon: /img/royians/avatar.gif # 页脚的icon
   icp:                    # ICP
   siteIcon: /img/royians/logo.png # 主页的icon
+  uri: little-dream.land
 
 
 # 导航栏
@@ -188,14 +189,14 @@ errorpage:
 
 # 懒加载
 lazyload:
-  enable: false
+  enable: true
   placeholder: /img/acrylic.png
   errorimg: /img/acrylic.png
 
 # 加载动画
 loading:
   enable: false
-  pace: false
+  pace: true
 
 # 第三方设置
 thirdparty:
