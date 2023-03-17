@@ -8,6 +8,6 @@ hexo.extend.filter.register('after_post_render', function(data){
     data.locate = data.locate || config.locate
     data.cc = data.cc || config.copyright
     data.cover = data.cover || config.cover
-    data.excerpt =  data.description || data.excerpt || clearHtml(data.content).substr(0, config.excerpt).replaceAll(/[\r\n]/g, "");
+    data.excerpt =  data.description || data.excerpt || clearHtml(data.content).substr(0, config.excerpt).replace(/[\r\n]/g, "");
     return data;
   });
