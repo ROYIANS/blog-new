@@ -7097,7 +7097,7 @@ span.fund_name {
   height: 100%;
   left: 0;
   top: 0;
-  background: url(https://p.zhheo.com/20233d20063834f9527370c6d71a6585356d085002.png!cover) center center no-repeat;
+  background: url(/img/wechat-background.png) center center no-repeat;
   content: '';
 }
 
@@ -7147,7 +7147,7 @@ span.fund_name {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* background-color: #e71840; */
-  background: url(https://p.zhheo.com/202363e5ca73123f202bbeda6f024866a181080502.png!cover) center center no-repeat;
+  background: url(/img/wechat-face.png) center center no-repeat;
   background-size: 100%;
 }
 
@@ -7157,7 +7157,7 @@ span.fund_name {
   transform: rotateY(180deg);
   box-sizing: border-box;
   /* background-color: #212121; */
-  background: url(https://p.zhheo.com/202309da537f19ad4992f1340e53a11098df081402.png!cover) center center no-repeat;
+  background: url(/img/wechat-qrcode.png) center center no-repeat;
   background-size: 100%;
 }
 
@@ -10285,7 +10285,7 @@ details[open]:not(.tk-admin-config-group) > summary:hover:after {
   padding: 0 4px;
 }
 
-#article-container a:not(.fancybox)::before {
+#article-container a:not(.fancybox):not(.cf-friends-link)::before {
   content: "\ECAF";
   font-family: remixicon!important;
   font-style: normal;
@@ -11619,8 +11619,12 @@ img.tk-avatar-img {
 
 /* 昵称 */
 .tk-nick {
-  font-size: 1rem !important;
-  line-height: 32px;
+  font-size: 0.8rem !important;
+  line-height: 1.5;
+}
+
+.tk-actions a {
+  cursor: pointer;
 }
 
 /* 填写项标题 */
@@ -15497,5 +15501,9 @@ a#toPageButton.haveValue:hover {
   font-style: normal;
   font-weight: normal;
   font-size: var(--global-font-size);
-  color: var(--heo-main);
+  color: var(--heo-black);
+}
+
+.tk-icon.__comments:hover::before {
+  color: var(--heo-theme);
 }
