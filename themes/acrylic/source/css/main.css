@@ -802,7 +802,7 @@ blockquote footer cite::before {
 
 #article-container code, #article-container pre {
   font-size: var(--global-font-size);
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  font-family: "JetBrains Mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", sans-serif !important;
 }
 
 #article-container code {
@@ -820,6 +820,10 @@ blockquote footer cite::before {
 
 #article-container figure.highlight {
   position: relative;
+}
+
+#article-container figure.highlight table {
+  margin: 0;
 }
 
 #article-container figure.highlight pre {
@@ -10355,6 +10359,7 @@ b, strong {
   font-size: 0.9rem;
   line-height: 1.7;
   font-weight: 400;
+  font-family: "FZNewShuSong", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 #article-container.post-content h1, #article-container.post-content h2, #article-container.post-content h3, #article-container.post-content h4 {
