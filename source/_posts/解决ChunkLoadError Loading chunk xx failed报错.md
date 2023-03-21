@@ -6,7 +6,7 @@ tag:
   - Vue.js
   - webpack
   - JavaScript
-cover: /img/2023/01/0501.jpg
+cover: /images/covers/2023/01/0501.webp
 abbrlink: 2023010501
 date: 2023-01-05
 recommend: true

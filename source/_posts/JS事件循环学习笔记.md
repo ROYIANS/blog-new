@@ -4,7 +4,7 @@ categories: 随记
 tag:
   - 前端
   - JavaScript
-cover: /img/2023/03/2001.png
+cover: /images/covers/2023/03/2001.webp
 abbrlink: 2023032001
 date: 2023-03-20
 recommend: true
@@ -22,7 +22,7 @@ cc: 原创
 - 相互隔离，相互独立。
 - 可以通信（双方同意）
 
-![内存空间](/img/post_images/20230320-b09f3c7e9f944bfa8f8daacbeab89520.png)
+![内存空间](/images/post_images/20230320-b09f3c7e9f944bfa8f8daacbeab89520.webp)
 
 
 ### 线程
@@ -31,7 +31,7 @@ cc: 原创
 - 一个进程至少一个线程
 - 主线程：跟随进程自动启动的线程
 
-![线程](/img/post_images/20230320-78143c0adde64e2ebe655bc36849c73d.png)
+![线程](/images/post_images/20230320-78143c0adde64e2ebe655bc36849c73d.webp)
 
 
 

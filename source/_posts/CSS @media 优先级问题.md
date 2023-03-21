@@ -4,7 +4,7 @@ categories: 随记
 tag:
   - 前端
   - CSS3
-cover: /img/2023/01/0901.jpg
+cover: /images/covers/2023/01/0901.webp
 abbrlink: 2023010901
 date: 2023-01-09
 recommend: true

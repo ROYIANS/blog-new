@@ -4,7 +4,7 @@ categories: 随记
 tag:
   - 前端
   - JavaScript
-cover: /img/2023/01/0401.webp
+cover: /images/covers/2023/01/0401.webp
 abbrlink: 2023010401
 date: 2023-01-04
 recommend: true
