@@ -1,6 +1,6 @@
 ---
 title: 解决浏览器端 globalThis is not defined 报错
-categories: 技术碎片
+categories: 随记
 tag:
   - 前端
   - JavaScript

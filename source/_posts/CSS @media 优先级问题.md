@@ -1,6 +1,6 @@
 ---
 title: CSS @media 优先级问题
-categories: 技术碎片
+categories: 随记
 tag:
   - 前端
   - CSS3

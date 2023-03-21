@@ -1,6 +1,6 @@
 ---
 title: Hello 2023
-categories: 2023
+categories: 随笔
 tag: 个人随想
 cover: /img/2023.jpg
 abbrlink: a7cb0afa
