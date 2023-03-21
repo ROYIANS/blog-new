@@ -1,9 +1,9 @@
 # 站点设置
 site:
   name: ROY               # 左上角首页名称
-  icon: /images/royians/avatar.jpg # 页脚的icon
+  icon: /img/royians/avatar.jpg # 页脚的icon
   icp:                    # ICP
-  siteIcon: /images/royians/logo.png # 主页的icon
+  siteIcon: /img/royians/logo.png # 主页的icon
   uri: little-dream.land
 
 
