@@ -549,7 +549,7 @@ body {
   background: var(--heo-background);
   color: var(--heo-fontcolor);
   font-size: var(--global-font-size);
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+  font-family: "ROYIANS", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: transparent;
   margin: 0px;
@@ -622,6 +622,12 @@ a:hover {
 
 #aside-content .author-info__description, #aside-content .author-info__name, #site-name, #site-subtitle, #site-title {
   font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.blog-title {
+  font-family: "LDL";
+  font-size: 1.8rem!important;
+  font-weight: normal!important;
 }
 
 .is-center {
@@ -10356,10 +10362,10 @@ b, strong {
 
 /* 文章字号 */
 #article-container p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.7;
   font-weight: 400;
-  font-family: "FZNewShuSong", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "ROYIANS", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 #article-container.post-content h1, #article-container.post-content h2, #article-container.post-content h3, #article-container.post-content h4 {

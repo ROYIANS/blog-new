@@ -15,7 +15,11 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()"><%= page.title || config.title %></a>
+                <% if (page.title) {%>
+                <a id="page-name-text" onclick="acrylic.toTop()"><%= page.title %></a>
+                <% } else { %>
+                <a id="page-name-text" class="blog-title" onclick="acrylic.toTop()"><%= config.title %></a>
+                <% } %>
             </div>
         </div>
         <div id="menus">
