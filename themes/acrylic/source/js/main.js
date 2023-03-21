@@ -349,3 +349,8 @@ document.addEventListener('pjax:complete',() => {
     onlyPost()
     onlyPostandPage()
 })
+
+// 阻止双指放大页面
+document.addEventListener("gesturestart", function (event) {
+    event.preventDefault();
+});
