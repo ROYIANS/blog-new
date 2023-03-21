@@ -33,6 +33,13 @@ nav:
           icon: ri-price-tag-3-fill
     留言:
       url: /comments
+      icon: ri-chat-smile-2-line
+    关于:
+      url: false
+      child:
+        关于我:
+          url: /about
+          icon: ri-emotion-laugh-line
     友链:
       url: false
       child:
