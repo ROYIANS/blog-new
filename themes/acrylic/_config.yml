@@ -1,9 +1,9 @@
 # 站点设置
 site:
   name: ROY               # 左上角首页名称
-  icon: /img/royians/avatar.jpg # 页脚的icon
+  icon: /images/royians/avatar.jpg # 页脚的icon
   icp:                    # ICP
-  siteIcon: /img/royians/logo.png # 主页的icon
+  siteIcon: /images/royians/logo.png # 主页的icon
   uri: little-dream.land
 
 
@@ -183,7 +183,7 @@ post:
 
 # 404
 errorpage:
-  img: /img/404.jpg
+  img: /images/404.webp
   text: =qwq= 你好像迷路了
   recommendList: true
 
