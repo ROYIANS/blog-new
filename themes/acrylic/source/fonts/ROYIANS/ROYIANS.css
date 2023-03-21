@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ROYIANS";
+  src: url("ROYIANS.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
