@@ -31,6 +31,8 @@ nav:
         全部标签:
           url: /tags/
           icon: ri-price-tag-3-fill
+    留言:
+      url: /comments
     友链:
       url: false
       child:
