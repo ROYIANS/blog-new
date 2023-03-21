@@ -2,6 +2,7 @@
 title: CSS @media 优先级问题
 categories: 随记
 tag:
+  - 随记
   - 前端
   - CSS3
 cover: /images/covers/2023/01/0901.webp

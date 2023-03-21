@@ -6,6 +6,7 @@ tag:
   - Vue.js
   - webpack
   - JavaScript
+  - 随记
 cover: /images/covers/2023/01/0501.webp
 abbrlink: 2023010501
 date: 2023-01-05

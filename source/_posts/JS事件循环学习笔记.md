@@ -4,6 +4,7 @@ categories: 随记
 tag:
   - 前端
   - JavaScript
+  - 随记
 cover: /images/covers/2023/03/2001.webp
 abbrlink: 2023032001
 date: 2023-03-20
