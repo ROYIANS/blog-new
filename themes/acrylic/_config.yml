@@ -1,7 +1,7 @@
 # 站点设置
 site:
   name: ROY               # 左上角首页名称
-  icon: /img/royians/avatar.gif # 页脚的icon
+  icon: /img/royians/avatar.jpg # 页脚的icon
   icp:                    # ICP
   siteIcon: /img/royians/logo.png # 主页的icon
   uri: little-dream.land
@@ -124,7 +124,7 @@ aside:
         url: https://github.com/ROYIANS
       微信公众号:
         icon: ri-wechat-2-fill
-        url: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc1NDIzNA==&scene=124#wechat_redirect
+        url: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxODQ1OTU0OQ==&scene=124#wechat_redirect
     button:
       text: 个人主页
       url: https://www.royians.cn/
@@ -190,8 +190,8 @@ errorpage:
 # 懒加载
 lazyload:
   enable: true
-  placeholder: /img/acrylic.png
-  errorimg: /img/acrylic.png
+  placeholder: /img/dribble-shot-load-screen.gif
+  errorimg: /img/dribble-shot-load-screen.gif
 
 # 加载动画
 loading:

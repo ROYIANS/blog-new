@@ -14,6 +14,10 @@
     var description = page.description || page.excerpt || config.description
 -%>
 <title><%= title + subtitle %></title>
+<% if(page.noreffer){ %>
+    <meta name="referrer" content="never">
+    <meta data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal">
+<% } %>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="<%= url_for(theme.site.siteIcon) %>">
 <link rel="apple-touch-icon" href="<%= url_for(theme.site.siteIcon) %>">
