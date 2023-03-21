@@ -109,10 +109,10 @@ hometop:
 
   recommendList:
     sup: 置顶文章
-    title: 你好 2023
-    url: /2023-03-10/hello-2023/
-    img: /img/2023.jpg
-    color: '#009688'
+    title: 酷安文化衫设计
+    url: /posts/2017082201/
+    img: /images/covers/2017/08/2201.webp
+    color: '#212121'
 
 # 个人卡片
 aside:
