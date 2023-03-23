@@ -10659,7 +10659,7 @@ blockquote p {
 
 /* 文章图片 */
 #article-container img {
-  border-radius: 12px;
+  border-radius: 4px;
   margin-bottom: 0.5rem;
   object-fit: cover;
 }
