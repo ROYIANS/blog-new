@@ -229,6 +229,9 @@ extends:
      - <link href="/fonts/ROYIANS/ROYIANS.css" rel="stylesheet">
      - <link href="/fonts/LDL/LDL.css" rel="stylesheet">
      - <link href="/css/heti.min.css" rel="stylesheet">
+     - <link rel="preconnect" href="https://fonts.googleapis.com">
+     - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     - <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&display=swap" rel="stylesheet">
      - <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?fe2db955cb6ff96a6e53b812ac5e9559";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
      - <!--Google tag(gtag.js)--><script async src="https://www.googletagmanager.com/gtag/js?id=G-8CY7HEN598"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8CY7HEN598');</script>
   body: # 在body中插入
