@@ -20,7 +20,7 @@
                 <% if(index % 2 == 0){ %>
                     <div class="tags-group-icon-pair">
                 <% } %>
-                    <a class="tags-group-icon" href="<%= url_for(item.link) %>" title="<%= item.name %>">
+                    <a class="tags-group-icon" href="<%= url_for(`${item.link}?from=${theme.site.uri}`) %>" title="<%= item.name %>">
                         <img src="<%= item.avatar %>">
                     </a>
                 <% if(index % 2 == 1){ %>

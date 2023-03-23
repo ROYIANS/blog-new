@@ -16,7 +16,7 @@ nav:
       我的:
         个人主页:
           icon: /img/avatar.webp
-          url: https://www.royains.cn/
+          url: https://royians.cn/
 # 导航栏内容
   menu:
     文库:
@@ -40,6 +40,9 @@ nav:
         关于我:
           url: /about
           icon: ri-emotion-laugh-line
+        个人主页:
+          icon: ri-home-heart-line
+          url: https://royians.cn/
     友链:
       url: false
       child:
