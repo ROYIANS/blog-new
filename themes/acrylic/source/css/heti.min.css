@@ -5,7 +5,7 @@
  */
 @font-face {
     font-family: "Heti Hei";
-    src: "Heti Hei SC", "Heti Hei TC", "Heti Hei JP", "Heti Hei KR"
+    src: "Noto Sans SC", "Heti Hei SC", "Heti Hei TC", "Heti Hei JP", "Heti Hei KR"
 }
 
 @font-face {
@@ -138,7 +138,7 @@
 
 @font-face {
     font-family: "Heti Song";
-    src: local("Songti SC Regular"), local("Songti TC Regular"), local("SimSun")
+    src: local("Noto Serif SC"), local("Songti SC Regular"), local("Songti TC Regular"), local("SimSun")
 }
 
 @font-face {
