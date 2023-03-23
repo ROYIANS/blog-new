@@ -586,7 +586,7 @@
 
 @media (prefers-color-scheme: dark) {
     .heti u[title] {
-        border-block-end-color: rgba(255, 255, 255, .54)
+        border-block-end-color: var(--heo-fontcolor)
     }
 }
 

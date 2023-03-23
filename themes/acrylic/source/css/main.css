@@ -10321,11 +10321,11 @@ details[open]:not(.tk-admin-config-group) > summary:hover:after {
   padding: 0 !important;
 }
 
-#article-container p {
-  margin: 1rem 0;
-  text-align: left;
-  letter-spacing: 0.6px;
-}
+/*#article-container p {*/
+/*  margin: 1rem 0;*/
+/*  text-align: left;*/
+/*  letter-spacing: 0.6px;*/
+/*}*/
 
 #article-container code {
   /*color: var(--heo-white);*/
@@ -10358,49 +10358,6 @@ table thead {
 /* 文章中的加粗文本颜色 */
 b, strong {
   color: var(--heo-lighttext);
-}
-
-/* 文章字号 */
-#article-container p {
-  font-size: 0.8rem;
-  line-height: 1.7;
-  font-weight: 400;
-  font-family: "ROYIANS", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-}
-
-#article-container.post-content h1, #article-container.post-content h2, #article-container.post-content h3, #article-container.post-content h4 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-#article-container.post-content h1 {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-#article-container.post-content h2 {
-  font-size: 1.3rem;
-  line-height: 1.3;
-  border-top: 1px dashed var(--heo-theme-op);
-  padding-top: 1.5rem;
-}
-
-#article-container.post-content h3 {
-  font-size: 1.1rem;
-  line-height: 1.3;
-}
-
-#article-container.post-content h4 {
-  font-size: 1.0rem;
-  line-height: 1.3;
-}
-
-@media screen and (max-width: 768px) {
-  #article-container p {
-    line-height: 1.5;
-  }
 }
 
 /* 外挂标签 */
