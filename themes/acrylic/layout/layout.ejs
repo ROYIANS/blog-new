@@ -8,6 +8,7 @@
             <%- partial('partial/loading', {cache: true}) %>
         <% } %>
         <%- partial('partial/console', {cache: true}) %>
+        <div id="sakana-widget"></div>
         <%- partial('partial/sidebar', {cache: true}) %>
         <% if(page.type !== '404'){ %>
             <div class="<%= is_post() ? 'post' : 'page' %>" id="body-wrap">
@@ -21,7 +22,7 @@
             <div class="error" id="body-wrap">
                 <%- body %>
             </div>
-         <% } %>   
+         <% } %>
         <%- partial('partial/body', {cache: true}) %>
     </body>
 </html>

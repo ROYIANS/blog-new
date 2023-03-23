@@ -15513,3 +15513,12 @@ a#toPageButton.haveValue:hover {
 .tk-icon.__comments:hover::before {
   color: var(--heo-theme);
 }
+
+#sakana-widget {
+  margin: 0;
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  z-index: 2;
+  padding: 75px 0;
+}

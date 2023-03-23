@@ -2,9 +2,22 @@
 <% if(theme.loading.enable && theme.loading.pace){ %>
     <script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="<%= cdn.pacejs %>"></script>
 <% } %>
-<%- css(cdn.fontawesomecss) %>    
+<%- css(cdn.fontawesomecss) %>
 <%- css(cdn.snackbarcss) %>
 <%- js(cdn.qrcodejs) %>
 <% if(theme.comment.enable){ %>
     <%- js(cdn.twikoojs) %>
+<% } %>
+<% if(theme.sakana.enable){ %>
+    <%- css(cdn.sakanacss) %>
+    <script>
+      function initSakanaWidget() {
+        new SakanaWidget().mount('#sakana-widget');
+      }
+    </script>
+    <script
+            async
+            onload="initSakanaWidget()"
+            src="<%= cdn.sakanajs %>"
+    ></script>
 <% } %>
