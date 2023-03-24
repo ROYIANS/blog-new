@@ -10507,13 +10507,13 @@ blockquote p {
 }
 
 /* readmore插件 */
-/*
+
 [data-theme=dark] #read-more-mask{
   background: -webkit-gradient(linear, 0 0%, 0 100%, from(rgba(29, 30, 31, 0)), to(rgb(29, 30, 31)))!important;
 }
 
 #read-more-btn{
-  background: var(--heo-blue)!important;
+  background: var(--heo-main)!important;
   border: 0px solid var(--heo-white) !important;
   color: var(--heo-white) !important;
   text-decoration: none!important;
@@ -10523,7 +10523,7 @@ blockquote p {
 
 #read-more-btn:hover{
   background: var(--heo-white) !important;
-  color: var(--heo-blue)!important;
+  color: var(--heo-main)!important;
 }
 
 #btw-modal {
@@ -10539,6 +10539,7 @@ blockquote p {
   margin-top: 0!important;
   color: #fff !important;
   margin: 2rem 0 1rem 0!important;
+  text-align: center;
 }
 
 #btw-modal-header strong{
@@ -10551,7 +10552,7 @@ blockquote p {
 }
 
 #btw-submit-btn{
-  background: rgb(66, 123, 238)!important;
+  background: var(--heo-main)!important;
   border-radius: 8px!important;
   color: #fff !important;
   font-weight:bold!important;
@@ -10559,7 +10560,7 @@ blockquote p {
 
 #btw-submit-btn:hover{
   background: #fff !important;
-  color: rgb(66, 123, 238)!important;
+  color: var(--heo-main)!important;
 }
 
 #btw-modal-input{
@@ -10578,7 +10579,26 @@ blockquote p {
 
 #btw-mask{
   backdrop-filter: blur(3px);
-} */
+}
+
+
+#btw-footer {
+  display: none;
+}
+
+#btw-modal {
+  padding: 20px!important;
+  border-radius: 4px!important;
+}
+
+#btw-modal-close-btn {
+  top: 10px!important;
+  right: 10px!important;
+}
+
+#btw-modal img {
+  pointer-events: none;
+}
 
 /* 文章内标题 */
 #article-container .headerlink::before {

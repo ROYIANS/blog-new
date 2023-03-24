@@ -29,4 +29,17 @@
     <% if(page.comments && theme.comment.enable){ %>
         <%- partial('partial/compoment/third-party/comment') %>
     <% } %>
+    <% if(page.verify){ %>
+        <script src="https://readmore.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+        <script>
+          const btw = new BTWPlugin();
+          btw.init({
+            id: 'article-container',
+            blogId: '31348-1679646785665-295',
+            name: 'VIDORRA',
+            qrcode: 'https://s2.loli.net/2023/03/24/GveN3XW25UcdEMi.jpg',
+            keyword: '验证码',
+          });
+        </script>
+    <% } %>
 </div>
