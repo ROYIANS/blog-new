@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 document.addEventListener('pjax:complete',() => {
-    allPage()
+    // allPage()
     onlyHome()
     onlyPost()
     onlyPostandPage()
