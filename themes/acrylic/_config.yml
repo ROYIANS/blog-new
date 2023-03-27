@@ -63,6 +63,7 @@ nav:
 
 # 导航栏右侧快捷菜单
   right: # @todo 允许用户自定义
+    search: true
     travellings: true   #开往
     random: true        #
     console: true       #控制台
@@ -71,45 +72,46 @@ nav:
 hometop:
   bbtime: true
   banner:
+    enable: true
     title: 记录生活<br>的点点滴滴
     url: little-dream.land
     icon:
-      # AE:
-      #   img: /img/icon/ae.png
-      #   color: '#989bf8'
-      # Sketch:
-      #   img: /img/icon/Sketch.png
-      #   color: '#ffffff'
-      # Docker:
-      #   img: /img/icon/docker.png
-      #   color: '#57b6e6'
-      # ps:
-      #   img: /img/icon/ps.png
-      #   color: '#4082c3'
-      # FinalCutPro:
-      #   img: /img/icon/FinalCutPro.png
-      #   color: '#ffffff'
-      # Python:
-      #   img: /img/icon/Python.png
-      #   color: '#ffffff'
-      # Swift:
-      #   img: /img/icon/Swift.png
-      #   color: '#eb6840'
-      # Principle:
-      #   img: /img/icon/Principle.png
-      #   color: '#8f55ba'
-      # illustrator:
-      #   img: /img/icon/illustrator.png
-      #   color: '#f29e39'
-      # CSS3:
-      #   img: /img/icon/CSS3.png
-      #   color: '#2c51db'
-      # JS:
-      #   img: /img/icon/JS.png
-      #   color: '#f7cb4f'
-      # Git:
-      #   img: /img/icon/git.png
-      #   color: '#df5b40'
+       AE:
+         img: /img/icon/ae.png
+         color: '#989bf8'
+       Sketch:
+         img: /img/icon/Sketch.png
+         color: '#ffffff'
+       Docker:
+         img: /img/icon/docker.png
+         color: '#57b6e6'
+       ps:
+         img: /img/icon/ps.png
+         color: '#4082c3'
+       FinalCutPro:
+         img: /img/icon/FinalCutPro.png
+         color: '#ffffff'
+       Python:
+         img: /img/icon/Python.png
+         color: '#ffffff'
+       Swift:
+         img: /img/icon/Swift.png
+         color: '#eb6840'
+       Principle:
+         img: /img/icon/Principle.png
+         color: '#8f55ba'
+       illustrator:
+         img: /img/icon/illustrator.png
+         color: '#f29e39'
+       CSS3:
+         img: /img/icon/CSS3.png
+         color: '#2c51db'
+       JS:
+         img: /img/icon/JS.png
+         color: '#f7cb4f'
+       Git:
+         img: /img/icon/git.png
+         color: '#df5b40'
 
   categoryGroup:
     G1:
@@ -139,7 +141,7 @@ aside:
     Sticky: ['newestPost', 'allInfo']
   post:
     noSticky: ['about']
-    Sticky: ['newestPost']   
+    Sticky: ['newestPost']
   page:
     noSticky: ['about', 'flip']
     Sticky: ['newestPost', 'allInfo']
@@ -158,26 +160,26 @@ aside:
       url: https://www.royians.cn/
 
   flip:
-    color: '#0099FF'
+    color: '#95ec69'
     face:
-      title: QQ群
-      desc: 加入官方QQ群与我们交流
+      title: 公众号
+      desc: 关注VIDORRA
     backface:
       title: 扫一扫
-      desc: 获取最新信息和帮助
-      img: /img/qqgroup.png
+      desc: 获取最新文章
+      img: /images/siteinfo/wechat.jpg
 
-  toc: 
+  toc:
     post: true
     page: false
 
   # 建站时间
   siteinfo:
     postcount: true
-    wordcount: false
-    pv: false
-    uv: false
-    updatetime: false
+    wordcount: true
+    pv: true
+    uv: true
+    updatetime: true
     runtimeenable: true
     runtime: '2018-01-01 00:00:00'
 
@@ -222,7 +224,7 @@ page:
   tags: true
   categories: true
   default:
-    cover: /img/hello.jpg   
+    cover: /img/hello.jpg
 
 # 文章页默认设置
 post:
@@ -233,18 +235,18 @@ post:
     excerpt: 100
   meta:
     date: true
-    updated: false
+    updated: true
     locate: true
-    wordcount: false
-    readtime: false
-    pv: false
-    comment: false      
+    wordcount: true
+    readtime: true
+    pv: true
+    comment: true
   award:
     enable: false
     wechat:
     alipay:
     url:
-  covercolor: false  #文章cover取色
+  covercolor: true  #文章cover取色
 
 # 404
 errorpage:
@@ -263,7 +265,7 @@ lightbox: true
 
 #代码高亮增强
 hightlight:
-  enable: false
+  enable: true
   hightlimit: 200
 
 # 加载动画
@@ -274,12 +276,12 @@ loading:
 # 第三方设置
 thirdparty:
   wordcount: true
-  busuanzi: 
-    enable: false
+  busuanzi:
+    enable: true
     usecomment: false #当评论系统开启时文章页面使用评论系统的统计数据
   search:
     algolia_search:
-      enable: false
+      enable: true
       # hits:
       #   per_page: 6
     local_search:
@@ -308,6 +310,8 @@ extends:
      - <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?fe2db955cb6ff96a6e53b812ac5e9559";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
      - <!--Google tag(gtag.js)--><script async src="https://www.googletagmanager.com/gtag/js?id=G-8CY7HEN598"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8CY7HEN598');</script>
   body: # 在body中插入
+     - <script type="text/javascript" src="/js/extend/covercolor.js"></script>
+     - <script type="text/javascript" src="/js/extend/getImageMeanColor.js"></script>
 
 sakana:
   enable: true

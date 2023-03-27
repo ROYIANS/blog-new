@@ -1,19 +1,17 @@
 function coverColor() {
     var path = document.getElementById("post-cover")?.src;
     if (path !== undefined) {
-      var httpRequest = new XMLHttpRequest();
-      httpRequest.open('GET', path + '?imageAve', true); 
-      httpRequest.send(); 
-      httpRequest.onreadystatechange = function () {
-        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-          var json = httpRequest.responseText; 
-          var obj = eval('(' + json + ')');
-          var value = obj.RGB;
-          value = "#" + value.slice(2)
+      const queryParam = {
+        imageUrl: path,
+        cb: (rgba,hsla,redMean,greenMean,blueMean,alphaMean,h,s,l) => {
+          const r = Number(redMean).toString(16).padStart(2, '0')
+          const g = Number(greenMean).toString(16).padStart(2, '0')
+          const b = Number(blueMean).toString(16).padStart(2, '0')
+          let value = `#${r}${g}${b}`
           if (getContrastYIQ(value) == "light") {
             value = LightenDarkenColor(colorHex(value), -50)
           }
-  
+
           document.documentElement.style.setProperty('--heo-main', value);
           document.documentElement.style.setProperty('--heo-main-op', value + '23');
           document.documentElement.style.setProperty('--heo-main-op-deep', value + 'dd');
@@ -21,7 +19,8 @@ function coverColor() {
           initThemeColor()
           document.getElementById("coverdiv").classList.add("loaded");
         }
-      };
+      }
+      getImageMeanColor(queryParam)
     } else {
       document.documentElement.style.setProperty('--heo-main', 'var(--heo-theme)');
       document.documentElement.style.setProperty('--heo-main-op', 'var(--heo-theme-op)');
@@ -30,13 +29,13 @@ function coverColor() {
       initThemeColor()
     }
   }
-  
+
 
 
 function colorHex(colorString) {
     const hexRegex = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
     let color = colorString;
-  
+
     if (/^(rgb|RGB)/.test(color)) {
       const colorArr = color.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
       const hexArr = colorArr.map(c => {
@@ -55,50 +54,50 @@ function colorHex(colorString) {
     }
     return color;
   }
-  
-  
+
+
 
 function colorRgb(str) {
     const HEX_SHORT_REGEX = /^#([0-9a-fA-f]{3})$/;
     const HEX_LONG_REGEX = /^#([0-9a-fA-f]{6})$/;
     const HEX_SHORT_LENGTH = 4;
-  
+
     const sColor = str.toLowerCase();
     let hexValue = "";
-  
+
     if (sColor && (HEX_SHORT_REGEX.test(sColor) || HEX_LONG_REGEX.test(sColor))) {
       hexValue = sColor.length === HEX_SHORT_LENGTH ?
         sColor.replace(/^#(.)/g, "#$1$1") :
         sColor;
-  
+
       const rgbValue = hexValue.slice(1)
         .match(/.{2}/g)
         .map(val => parseInt(val, 16))
         .join(",");
-  
+
       return `rgb(${rgbValue})`;
     } else {
       return sColor;
     }
   }
-  
+
 
 function LightenDarkenColor(col, amt) {
     let usePound = false;
-  
+
     if (col[0] === "#") {
       col = col.slice(1);
       usePound = true;
     }
-  
+
     const num = parseInt(col, 16);
     const r = Math.min(255, Math.max(0, (num >> 16) + amt));
     const b = Math.min(255, Math.max(0, ((num >> 8) & 0xff) + amt));
     const g = Math.min(255, Math.max(0, (num & 0xff) + amt));
-  
+
     return `${usePound ? "#" : ""}${(g | (b << 8) | (r << 16)).toString(16).padStart(6, "0")}`;
   }
-  
+
 
 function getContrastYIQ(hexcolor) {
     var colorrgb = colorRgb(hexcolor);
@@ -128,7 +127,7 @@ function getContrastYIQ(hexcolor) {
     }
     changeThemeColor(themeColor);
   }
-  
+
   function changeThemeColor(color) {
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {

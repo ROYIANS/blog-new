@@ -5994,8 +5994,8 @@ span.fund_name {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* background-color: #e71840; */
-  background: url(/img/wechat-face.png) center center no-repeat;
-  background-size: 100%;
+  /*background: url(/img/wechat-face.png) center center no-repeat;*/
+  /*background-size: 100%;*/
 }
 
 .back.face {
@@ -6006,8 +6006,8 @@ span.fund_name {
   transform: rotateY(180deg);
   box-sizing: border-box;
   /* background-color: #212121; */
-  background: url(/img/wechat-qrcode.png) center center no-repeat;
-  background-size: 100%;
+  /*background: url(/img/wechat-qrcode.png) center center no-repeat;*/
+  /*background-size: 100%;*/
 }
 
 /* 商务广告-设计周刊 */

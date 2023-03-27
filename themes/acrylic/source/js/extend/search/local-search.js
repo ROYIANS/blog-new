@@ -1,4 +1,4 @@
-const $searchMask = document.getElementById('search-mask'), 
+const $searchMask = document.getElementById('search-mask'),
 $searchDialog = document.querySelector('#local-search .search-dialog'),
 $input = document.querySelector('#search-input'),
 $resultContent = document.getElementById('search-results'),
@@ -114,8 +114,8 @@ class search{
               // highlight all keywords
               keywords.forEach(keyword => {
                 const regex = new RegExp(`(?!<[^>]*?)(${keyword})(?![^<]*?>)`, 'gi')
-                matchContent = matchContent.replaceAll(regex, '<span class="search-keyword">$1</span>')
-                dataTitle = dataTitle.replaceAll(regex, '<span class="search-keyword">$1</span>')
+                matchContent = matchContent.replace(regex, '<span class="search-keyword">$1</span>')
+                dataTitle = dataTitle.replace(regex, '<span class="search-keyword">$1</span>')
               })
 
               str += '<div class="search__hit-item"><a href="' + dataUrl + '"><span class="search-result-title">' + dataTitle + '</span>'

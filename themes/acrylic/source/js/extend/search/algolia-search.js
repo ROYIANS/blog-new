@@ -1,4 +1,4 @@
-const $searchMask = document.getElementById('search-mask'), 
+const $searchMask = document.getElementById('search-mask'),
 $searchDialog = document.querySelector('#algolia-search .search-dialog')
 
 class search{
@@ -127,7 +127,7 @@ const searchClickFn = () => {
 const searchClickFnOnce = () => {
   document.querySelector('#algolia-search .search-close-button').addEventListener('click', search.closeSearch)
   $searchMask.addEventListener('click', search.closeSearch)
-  if (GLOBALCONFIG.localsearch.preload) dataObj = search.fetchData(GLOBALCONFIG.localsearch.path)
+  if (GLOBALCONFIG.localsearch && GLOBALCONFIG.localsearch.preload) dataObj = search.fetchData(GLOBALCONFIG.localsearch.path)
 }
 
 window.addEventListener('load', () => {
