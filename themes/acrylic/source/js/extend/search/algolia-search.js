@@ -73,7 +73,7 @@ class search{
         container: '#algolia-hits',
         templates: {
             item (data) {
-                const link = '/' + data.path
+                const link = data.permalink
                 const result = data._highlightResult
                 const content = result.contentStripTruncate
                 ? that.cutContent(result.contentStripTruncate.value)
