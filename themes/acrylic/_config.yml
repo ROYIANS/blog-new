@@ -1,3 +1,11 @@
+## Acrylic主题配置文件
+############################################################################################################
+# 为避免主题更新后，配置文件被覆盖，请复制一份此文件到站点根目录下的_config.Acrylic.yml文件中，修改_config.Acrylic.yml文件中的配置
+############################################################################################################
+# 修改此文件前，请仔细阅读官方文档：https://next-docs.acrylic.org.cn/
+############################################################################################################
+
+
 # 站点设置
 site:
   name: ROY               # 左上角首页名称
@@ -55,11 +63,9 @@ nav:
 
 # 导航栏右侧快捷菜单
   right: # @todo 允许用户自定义
-    travellings: true
-    random: true
-    search: true
-    console: true
-
+    travellings: true   #开往
+    random: true        #
+    console: true       #控制台
 
 # heo式顶部一大坨
 hometop:
@@ -68,42 +74,42 @@ hometop:
     title: 记录生活<br>的点点滴滴
     url: little-dream.land
     icon:
-      AE:
-        img: /img/icon/ae.png
-        color: '#989bf8'
-      Sketch:
-        img: /img/icon/Sketch.png
-        color: '#ffffff'
-      Docker:
-        img: /img/icon/docker.png
-        color: '#57b6e6'
-      ps:
-        img: /img/icon/ps.png
-        color: '#4082c3'
-      FinalCutPro:
-        img: /img/icon/FinalCutPro.png
-        color: '#ffffff'
-      Python:
-        img: /img/icon/Python.png
-        color: '#ffffff'
-      Swift:
-        img: /img/icon/Swift.png
-        color: '#eb6840'
-      Principle:
-        img: /img/icon/Principle.png
-        color: '#8f55ba'
-      illustrator:
-        img: /img/icon/illustrator.png
-        color: '#f29e39'
-      CSS3:
-        img: /img/icon/CSS3.png
-        color: '#2c51db'
-      JS:
-        img: /img/icon/JS.png
-        color: '#f7cb4f'
-      Git:
-        img: /img/icon/git.png
-        color: '#df5b40'
+      # AE:
+      #   img: /img/icon/ae.png
+      #   color: '#989bf8'
+      # Sketch:
+      #   img: /img/icon/Sketch.png
+      #   color: '#ffffff'
+      # Docker:
+      #   img: /img/icon/docker.png
+      #   color: '#57b6e6'
+      # ps:
+      #   img: /img/icon/ps.png
+      #   color: '#4082c3'
+      # FinalCutPro:
+      #   img: /img/icon/FinalCutPro.png
+      #   color: '#ffffff'
+      # Python:
+      #   img: /img/icon/Python.png
+      #   color: '#ffffff'
+      # Swift:
+      #   img: /img/icon/Swift.png
+      #   color: '#eb6840'
+      # Principle:
+      #   img: /img/icon/Principle.png
+      #   color: '#8f55ba'
+      # illustrator:
+      #   img: /img/icon/illustrator.png
+      #   color: '#f29e39'
+      # CSS3:
+      #   img: /img/icon/CSS3.png
+      #   color: '#2c51db'
+      # JS:
+      #   img: /img/icon/JS.png
+      #   color: '#f7cb4f'
+      # Git:
+      #   img: /img/icon/git.png
+      #   color: '#df5b40'
 
   categoryGroup:
     G1:
@@ -128,6 +134,16 @@ hometop:
 
 # 个人卡片
 aside:
+  home:
+    noSticky: ['about', 'flip']
+    Sticky: ['newestPost', 'allInfo']
+  post:
+    noSticky: ['about']
+    Sticky: ['newestPost']   
+  page:
+    noSticky: ['about', 'flip']
+    Sticky: ['newestPost', 'allInfo']
+
   card:
     content: 欢迎来到<b>小梦岛</b>，这里记录我的<b>日常生活</b>、<b>个人想法</b>和<b>学习记录</b><br>感谢你参观我的博客，我使用的博客主题是<b><a href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" target="_blank">Acrylic</a></b>。
     information:
@@ -140,8 +156,29 @@ aside:
     button:
       text: 个人主页
       url: https://www.royians.cn/
-# 建站时间
-  analytics:
+
+  flip:
+    color: '#0099FF'
+    face:
+      title: QQ群
+      desc: 加入官方QQ群与我们交流
+    backface:
+      title: 扫一扫
+      desc: 获取最新信息和帮助
+      img: /img/qqgroup.png
+
+  toc: 
+    post: true
+    page: false
+
+  # 建站时间
+  siteinfo:
+    postcount: true
+    wordcount: false
+    pv: false
+    uv: false
+    updatetime: false
+    runtimeenable: true
     runtime: '2018-01-01 00:00:00'
 
 # 页脚
@@ -180,6 +217,13 @@ footer:
   randomlink: true
 
 
+page:
+  error: true
+  tags: true
+  categories: true
+  default:
+    cover: /img/hello.jpg   
+
 # 文章页默认设置
 post:
   default:
@@ -187,11 +231,20 @@ post:
     locate: 太原
     copyright: 原创
     excerpt: 100
+  meta:
+    date: true
+    updated: false
+    locate: true
+    wordcount: false
+    readtime: false
+    pv: false
+    comment: false      
   award:
     enable: false
     wechat:
     alipay:
     url:
+  covercolor: false  #文章cover取色
 
 # 404
 errorpage:
@@ -205,6 +258,14 @@ lazyload:
   placeholder: /img/dribble-shot-load-screen.gif
   errorimg: /img/dribble-shot-load-screen.gif
 
+# 图片灯箱
+lightbox: true
+
+#代码高亮增强
+hightlight:
+  enable: false
+  hightlimit: 200
+
 # 加载动画
 loading:
   enable: false
@@ -213,6 +274,18 @@ loading:
 # 第三方设置
 thirdparty:
   wordcount: true
+  busuanzi: 
+    enable: false
+    usecomment: false #当评论系统开启时文章页面使用评论系统的统计数据
+  search:
+    algolia_search:
+      enable: false
+      # hits:
+      #   per_page: 6
+    local_search:
+      enable: false
+      preload: false
+      CDN:
 
 # 评论
 comment:
@@ -249,6 +322,8 @@ cdn:
     twikoojs: https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js
     sakanacss: https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css
     sakanajs: https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js
+    instantsearch: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/4.39.0/instantsearch.production.min.js
+    algolia: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js
   body:
     swipercss: /lib/swiper.min.css
     pjaxjs: /lib/pjax.min.js
@@ -257,3 +332,4 @@ cdn:
     viewimagejs: /lib/view-image.min.js
     waterfalljs: /lib/waterfall.min.js
     swiperjs: /lib/swiper.min.js
+    busuanzijs: https://npm.elemecdn.com/penndu@1.0.0/bsz.js

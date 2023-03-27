@@ -30,11 +30,7 @@
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/custom.css">
 <%- partial('partial/compoment/inject/head', {cache: true}) %>
-    <% if (theme.extends.head) for (const i of theme.extends.head){ %>
-        <%- i %>
-            <% } %>
-                <div class="site-config">
-                    <script>
-                        var GOBALPAGE = "<%= is_home() ? 'home' : (is_post() ? 'post' : (is_page() ? 'page' : 'temp')) %>"
-                    </script>
-                </div>
+<% if (theme.extends.head) for (const i of theme.extends.head){ %>
+    <%- i %>
+<% } %>
+<%- export_config() %>

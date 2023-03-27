@@ -21,3 +21,7 @@
             src="<%= cdn.sakanajs %>"
     ></script>
 <% } %>
+<% if(theme.nav.right.search && theme.thirdparty.search.algolia_search.enable){ %>
+    <%- js(cdn.instantsearch) %>
+    <%- js(cdn.algolia) %>
+<% } %>
