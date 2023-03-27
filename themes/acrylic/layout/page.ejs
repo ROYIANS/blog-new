@@ -18,10 +18,11 @@
             <% break;
             default: %>
                 <%- partial('page/page') %>
-            <% break; } %> 
-            <% if(page.comments && theme.comment.enable){ %>
-                <%- partial('partial/compoment/third-party/comment') %>
-            <% } %>    
+            <% break; 
+        } %> 
+        <% if(page.comment){ %>
+            <%- partial('partial/compoment/third-party/comments/comment') %>
+        <% } %>    
     </div>
     <% if(page.aside){ %>
         <%- partial('partial/compoment/aside/aside') %> 
