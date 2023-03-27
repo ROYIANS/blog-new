@@ -396,13 +396,6 @@ document.addEventListener('DOMContentLoaded', function () {
     refreshFn()
 })
 
-document.addEventListener('pjax:complete',() => {
-    // allPage()
-    onlyHome()
-    onlyPost()
-    onlyPostandPage()
-})
-
 // 阻止双指放大页面
 document.addEventListener("gesturestart", function (event) {
     event.preventDefault();
