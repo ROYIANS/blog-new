@@ -8300,7 +8300,7 @@ a.extend.prev {
   overflow: hidden;
   margin-bottom: 0;
   transform: rotate(10deg) translateY(-10%) scale(2);
-  filter: blur(10px);
+  filter: blur(4px);
   opacity: 0.5;
 }
 
@@ -8322,11 +8322,12 @@ a.extend.prev {
   .coverdiv {
     margin: 0 0 0 auto;
     transform: rotate(0deg) translateY(0) scale(1);
-    filter: blur(0px);
+    filter: blur(2px);
     width: 100%;
     position: fixed;
     height: 30rem;
     z-index: 1;
+    opacity: 0.8;
   }
 
   .coverdiv:after {
