@@ -2,6 +2,7 @@
 type: page
 title: 关于我
 abbrlink: /about
+comment: true
 ---
 
 正在努力编写中......

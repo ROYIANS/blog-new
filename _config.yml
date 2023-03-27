@@ -132,3 +132,19 @@ feed:
   icon: /img/royians/logo.png
   autodiscovery: true
   template:
+
+algolia:
+  appId: "X0WWAAXUJA"
+  apiKey: "e50c4e67b7ae1df93ab02fae368bc9af"
+  adminApiKey: ""
+  chunkSize: 5000
+  indexName: "LittleDreamland"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title

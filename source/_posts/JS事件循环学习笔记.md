@@ -10,6 +10,7 @@ abbrlink: 2023032001
 date: 2023-03-20
 recommend: true
 cc: 原创
+comment: true
 ---
 
 今天来学习下 JS 中的事件循环。

@@ -10,6 +10,7 @@ abbrlink: 2023010401
 date: 2023-01-04
 recommend: true
 cc: 原创
+comment: true
 ---
 
 今日开发时，生产运维人员上报说页面打开一片空白，无法进入系统。排查一下发现是我的[print-template-designer](https://github.com/ROYIANS/print-template-designer)报的错，报了一个 `globalThis is not defined`。
