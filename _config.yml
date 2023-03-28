@@ -148,3 +148,4 @@ algolia:
     - slug
     - tags
     - title
+    - says
