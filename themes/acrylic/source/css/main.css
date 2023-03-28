@@ -6657,7 +6657,7 @@ div#banners {
 .nowrapMove .tags-group-icon img {
   min-width: 100%;
   min-height: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
 }
 
