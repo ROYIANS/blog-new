@@ -246,9 +246,9 @@ post:
     wechat:
     alipay:
     url:
-  covercolor: #文章cover取色  
+  covercolor: #文章cover取色
     enable: true
-    local: true  
+    local: true
 
 # 404页面
 errorpage:
@@ -290,11 +290,11 @@ thirdparty:
       enable: false
       preload: false
       CDN:
-    
+
   aplayer:
-    enable: false
-    server: tencent
-    id: 1708664797      
+    enable: true
+    server: netease
+    id: 8022710661
 
 # 评论
 comment:
@@ -344,3 +344,6 @@ cdn:
     waterfalljs: /lib/waterfall.min.js
     swiperjs: /lib/swiper.min.js
     busuanzijs: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
+    aplayercss: https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css
+    aplayerjs: https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js
+    metingjs: https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
