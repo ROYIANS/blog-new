@@ -300,7 +300,7 @@ thirdparty:
 comment:
   enable: true
   twikoo:
-    envId: https://twikoo.little-dream.land/
+    envId: https://comment.little-dream.land
     visitor: true
 
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
