@@ -9,9 +9,9 @@
 # 站点设置
 site:
   name: ROY               # 左上角首页名称
-  icon: /img/royians/avatar.jpg # 页脚的icon
+  siteIcon: /img/royians/logo.png # 网页icon
+  icon: /img/royians/avatar.jpg # 页脚的icon、加载动画默认的icon
   icp:                    # ICP
-  siteIcon: /img/royians/logo.png # 主页的icon
   uri: little-dream.land
 
 
@@ -246,9 +246,11 @@ post:
     wechat:
     alipay:
     url:
-  covercolor: true  #文章cover取色
+  covercolor: #文章cover取色  
+    enable: true
+    local: true  
 
-# 404
+# 404页面
 errorpage:
   img: /images/404.webp
   text: =qwq= 你好像迷路了
@@ -270,8 +272,8 @@ hightlight:
 
 # 加载动画
 loading:
-  enable: false
-  pace: true
+  fullpage: false
+  pace: false
 
 # 第三方设置
 thirdparty:
@@ -288,6 +290,11 @@ thirdparty:
       enable: false
       preload: false
       CDN:
+    
+  aplayer:
+    enable: false
+    server: tencent
+    id: 1708664797      
 
 # 评论
 comment:
