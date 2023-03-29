@@ -330,7 +330,7 @@ cdn:
     fontawesomecss: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css
     snackbarcss: /lib/snackbar.min.css
     qrcodejs: /lib/qrcode.min.js
-    twikoojs: https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js
+    twikoojs: https://cdn.staticfile.org/twikoo/1.6.11/twikoo.all.min.js
     sakanacss: https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css
     sakanajs: https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js
     instantsearch: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/4.39.0/instantsearch.production.min.js
