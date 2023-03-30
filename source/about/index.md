@@ -1,5 +1,5 @@
 ---
-type: page
+type: about
 title: 关于我
 abbrlink: /about
 comment: true

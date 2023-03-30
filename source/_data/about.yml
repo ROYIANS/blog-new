@@ -1,0 +1,93 @@
+authorinfo:
+  leftTags:
+    - 🤖️ 数码科技爱好者
+    - 🔍 分享与热心帮助
+    - 🏠 智能家居小能手
+    - 🔨 设计开发一条龙
+  rightTags:
+    - 专修交互与设计 🤝
+    - 脚踏实地行动派 🏃
+    - 团队小组发动机 🧱
+    - 壮汉人狠话不多 💢
+  image: /img/royians/avatar.jpg
+contentinfo:
+  name: ROYIANS
+  title: 程序员
+  product: 卓越
+  design: 完美
+  program: 设计
+  user_experience: 安逸生活
+skills:
+  title: 技巧
+  subtitle: 探索与创造
+  tags:
+    - title: HTML5
+      icon: ri-html5-fill
+      color: '#ea582d'
+    - title: CSS3
+      icon: ri-css3-fill
+      color: '#1a4cd6'
+    - title: JavaScript
+      icon: ri-code-s-slash-line
+      color: '#f8cb57'
+    - title: Vue.js
+      icon: ri-vuejs-fill
+      color: '#47b981'
+    - title: React
+      icon: ri-reactjs-line
+      color: '#75d9ea'
+    - title: Node.js
+      icon: ri-npmjs-fill
+      color: '#e2282b'
+careers:
+  title: 生涯
+  subtitle: 提升与进步
+  items:
+    - school: TYUT
+      color: '#0189ff'
+      major: 软件工程
+  image: /images/siteinfo/transparent_cloud.png
+personalities:
+  tips: 性格
+  title: 提倡者
+  type: INFJ-A
+  image: /images/siteinfo/infj.webp
+  linkText: 16personalities
+  typeLink: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
+  typeName: 提倡者
+  myphoto: https://repobeats.axiom.co/api/embed/146d9694c8dac4e5dba5f95c7ba793dac8b3b6f9.svg
+motto:
+  title: 座右铭
+  prefix: 君子不器
+  content: 正道直行
+expertise:
+  title: 特长
+  prefix: 半音阶口琴
+  specialist: 入门者
+  content: 搜集信息能力
+  level: MAX
+tj: 12
+oneself:
+  location: (｀･ω･)
+  birthYear: 1997
+  university: TYUT
+  major: 软件工程
+  occupation: 软件工程师
+cause: <br/>没有为啥，因为喜欢
+game1:
+  title: 崩坏3
+  icon: ri-gamepad-line
+  tips: "ID: 19975889"
+game2:
+  title: 动物森友会
+  tips: "Switch ID: SW-6149-6745-8494"
+likes:
+  - type: like-technology
+    tips: 我的喜好
+    title: 待完善
+    subtips: 有点懒...
+rewardList:
+  - name: 暂无
+    vip: 5
+    money: 10,000.00
+    time: 1970-01-01
