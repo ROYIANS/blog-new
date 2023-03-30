@@ -18,14 +18,14 @@
                                     <div class="tags-group-icon-pair">
                                 <% } %>
                                 <div class="tags-group-icon" style="background:<%= tag.color %>">
-                                    <img src="<%= tag.icon %>" title="<%= tag.title %>">
+                                    <i class="<%= tag.icon %>" title="<%= tag.title %>"></i>
                                 </div>
                                 <% if (index === skills.tags.length - 1) { %>
                                     </div>
                                 <% } %>
                             <% }, '') %>
                         <% } %>
-                    </div>      
+                    </div>
                 </div>
             </div>
             </div>
@@ -33,7 +33,7 @@
             <% skills.tags.forEach(function(tag){ %>
             <div class="skill-info">
                 <div class="skill-icon" style="background:<%= tag.color %>">
-                <img src="<%= tag.icon %>" title="<%= tag.title %>">
+                    <i class="<%= tag.icon %>" title="<%= tag.title %>"></i>
                 </div>
                 <div class="skill-name"> <span><%= tag.title %></span></div>
             </div>
@@ -59,4 +59,4 @@
         <img class="author-content-img" src="<%= careers.image %>" alt="生涯">
         </div>
     </div>
-</div> 
+</div>
