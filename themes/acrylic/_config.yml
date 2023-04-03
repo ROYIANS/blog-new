@@ -8,12 +8,13 @@
 
 # 站点设置
 site:
-  name: ROY               # 左上角首页名称
+  name:                   # 左上角显示内容
+    class:  text          #i_class/text/img 
+    custom: ROY       #自定义内容
   siteIcon: /img/royians/logo.png # 网页icon
   icon: /img/royians/avatar.jpg # 页脚的icon、加载动画默认的icon
   icp:                    # ICP
   uri: little-dream.land
-
 
 # 导航栏
 nav:
@@ -249,6 +250,9 @@ post:
   covercolor: #文章cover取色
     enable: true
     local: true
+
+# 关于界面
+about: false
 
 # 404页面
 errorpage:
