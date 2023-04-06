@@ -1,0 +1,119 @@
+<div id="memos-page">
+    <section class="memos">
+        <ul class="timeline" id="waterfall">正在请求中...</ul>
+    </section>
+</div>
+<div id="bber-tips" style="color: var(--heo-secondtext);">- 只展示最近<%= theme.memos.limit %>条说说 -</div>
+
+<script>
+  fetch("<%= theme.memos.url %>/api/memo/all?limit=<%= theme.memos.limit %>").then(resp => {
+    if (resp && resp.ok) {
+      resp.json().then(res => {
+        const { data } = res;
+        if (data && data.length) {
+          document.getElementById('waterfall').innerHTML = data.map(item => {
+            return `
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">${new Date(parseInt(item.createdTs) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ')} - ${item.creatorName}</p>
+                  ${marked.parse(item.content)}
+                  <div class="bber-content-img">
+                  ${
+                      item.resourceList && item.resourceList.filter(resource => {
+                        return resource.type.startsWith('image')
+                      }).map(resource => {
+                        return `
+                            <img ${item.resourceList.length > 1 ? 'class="multiple"' : ''} src="<%= theme.memos.url %>/o/r/${resource.id}/${resource.publicId}">
+                        `
+                      }).join('')
+                  }
+                  </div>
+                </div>
+              </li>
+            `
+          }).join('')
+          setTimeout(() => {
+            acrylic.lightbox('#memos-page .bber-content-img img')
+          }, 100)
+        }
+      }).catch(err => {
+        document.getElementById('waterfall').innerHTML = `<p>加载失败！</p><pre>${err.message}</pre>`
+      })
+    } else {
+      document.getElementById('waterfall').innerHTML = `<p>加载失败！</p>`
+    }
+  }).catch(err => {
+    document.getElementById('waterfall').innerHTML = `<p>加载失败！</p><pre>${err.message}</pre>`
+  })
+</script>
+
+<style>
+    .timeline {
+        margin: 4em auto;
+        position: relative;
+        max-width: 46em;
+    }
+    .timeline::before {
+        background-color: var(--blockquote-color);
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 2px;
+        height: 100%;
+    }
+
+    .timeline-event {
+        position: relative;
+    }
+
+    .timeline-event:hover .timeline-event-icon {
+        rotate: -45deg;
+        background-color: var(--heo-main);
+    }
+
+    .timeline-event:hover .timeline-event-thumbnail {
+        box-shadow: inset 40em 0 0 0 var(--heo-main);
+    }
+
+    .timeline-event-copy {
+        padding: 2em;
+        position: relative;
+        top: -1.875em;
+        left: 4em;
+        width: 80%;
+    }
+
+    .timeline-event-body p:not(.timeline-event-thumbnail) {
+        padding-bottom: 1.2em;
+    }
+
+    .timeline-event-icon {
+        transition: transform 0.2s ease-in;
+        rotate: 45deg;
+        background-color: var(--blockquote-color);
+        outline: 10px solid var(--heo-background);
+        display: block;
+        margin: 0.5em 0.5em 0.5em -0.5em;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 1em;
+        height: 1em;
+    }
+
+    .timeline-event-thumbnail {
+        transition: box-shadow 0.5s ease-in 0.1s;
+        color: white;
+        font-size: 0.75em;
+
+        background-color: var(--blockquote-color);
+        box-shadow: inset 0 0 0 0 var(--heo-main-op-deep);
+        display: inline-block;
+        margin-bottom: 1.2em;
+        padding: 0.25em 1em 0.2em 1em;
+    }
+
+</style>

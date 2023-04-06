@@ -9,7 +9,7 @@
 # 站点设置
 site:
   name:                   # 左上角显示内容
-    class:  text          #i_class/text/img 
+    class:  text          #i_class/text/img
     custom: ROY       #自定义内容
   siteIcon: /img/royians/logo.png # 网页icon
   icon: /img/royians/avatar.jpg # 页脚的icon、加载动画默认的icon
@@ -42,6 +42,9 @@ nav:
           icon: ri-price-tag-3-fill
     留言:
       url: /comments
+      icon: ri-chat-smile-2-line
+    说说:
+      url: /memos
       icon: ri-chat-smile-2-line
     关于:
       url: false
@@ -327,6 +330,10 @@ extends:
 sakana:
   enable: true
 
+memos:
+  url: https://vidorra.life
+  limit: 30
+
 # 非必要勿动
 cdn:
   head:
@@ -339,6 +346,7 @@ cdn:
     sakanajs: https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js
     instantsearch: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/4.39.0/instantsearch.production.min.js
     algolia: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js
+    markedjs: https://cdn.jsdelivr.net/npm/marked/marked.min.js
   body:
     swipercss: /lib/swiper.min.css
     pjaxjs: /lib/pjax.min.js

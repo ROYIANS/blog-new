@@ -25,3 +25,6 @@
     <%- js(cdn.instantsearch) %>
     <%- js(cdn.algolia) %>
 <% } %>
+<% if (page.type === 'memos') {%>
+    <%- js(cdn.markedjs) %>
+<% } %>

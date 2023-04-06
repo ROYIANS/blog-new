@@ -22,15 +22,18 @@
             case 'album_detail': %>
                 <%- partial('album/album_detail') %>
             <% break;
+            case 'memos': %>
+                <%- partial('page/memos') %>
+            <% break;
             default: %>
                 <%- partial('page/page') %>
-            <% break; 
-        } %> 
+            <% break;
+        } %>
         <% if(page.comment){ %>
             <%- partial('partial/compoment/third-party/comments/comment') %>
-        <% } %>    
+        <% } %>
     </div>
     <% if(page.aside){ %>
-        <%- partial('partial/compoment/aside/aside') %> 
-    <% } %>   
-</main>     
+        <%- partial('partial/compoment/aside/aside') %>
+    <% } %>
+</main>
