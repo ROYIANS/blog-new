@@ -1,5 +1,7 @@
 <% const cdn = theme.cdn.body %>
-<%- js(cdn.pjaxjs) %>
+<% if(theme.pjax.enable){ %>
+    <%- js(cdn.pjaxjs) %>
+<% } %>
 <% if(theme.lazyload.enable){ %>
     <%- js(cdn.lazyloadjs) %>
 <% } %>

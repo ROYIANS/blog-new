@@ -269,6 +269,9 @@ lazyload:
   placeholder: /img/dribble-shot-load-screen.gif
   errorimg: /img/dribble-shot-load-screen.gif
 
+pjax:
+  enable: false
+
 # 图片灯箱
 lightbox: true
 
