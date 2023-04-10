@@ -141,14 +141,14 @@ hometop:
 # 个人卡片
 aside:
   home:
-    noSticky: ['about', 'flip']
-    Sticky: ['newestPost', 'allInfo']
+    noSticky: "about,flip"
+    Sticky: "newestPost,allInfo"
   post:
-    noSticky: ['about']
-    Sticky: ['newestPost']
+    noSticky: "about"
+    Sticky: "newestPost"
   page:
-    noSticky: ['about', 'flip']
-    Sticky: ['newestPost', 'allInfo']
+    noSticky: "about,flip"
+    Sticky: "newestPost,allInfo"
 
   card:
     content: 欢迎来到<b>小梦岛</b>，这里记录我的<b>日常生活</b>、<b>个人想法</b>和<b>学习记录</b><br>感谢你参观我的博客，我使用的博客主题是<b><a href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" target="_blank">Acrylic</a></b>。
