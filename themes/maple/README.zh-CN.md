@@ -28,7 +28,6 @@
 - ⚗️ [MathJax 支持](http://docs.mathjax.org/en/latest/)
 - ⚡️ [Mermaid 支持](https://mermaid-js.github.io/mermaid)
 - 🖼️ [Fancybox 支持](https://fancyapps.com/docs/ui/fancybox)
-- 🦜 [Giscus Support](https://giscus.app/zh-CN)
 - 📊 [ECharts 支持](https://echarts.apache.org/)
 
 ![maple](https://cdn.jsdelivr.net/gh/xbmlz/static@main/img/Maple.png)
@@ -97,14 +96,6 @@ mermaid:
   # Available themes: default | dark | forest | neutral
   theme: default
 
-# giscus
-giscus:
-  enable: true
-  repo:
-  repo_id:
-  category:
-  category_id:
-  mapping:
 ```
 
 

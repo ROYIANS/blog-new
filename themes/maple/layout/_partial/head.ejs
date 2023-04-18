@@ -49,8 +49,15 @@ if (is_archive()) {
 <%- js(theme.asset.jquery) %>
 <%- js(theme.asset.heti_add_on_js) %>
 
+<% if(theme.twikoo.enable){ %>
+    <%- js(theme.asset.twikoojs) %>
+<% } %>
+
 <%- partial('_plugins/tailwindcss') %>
 <%- partial('_plugins/nprogress') %>
 <%- partial('_plugins/theme') %>
 
+<% if (theme.extends.head) for (const i of theme.extends.head){ %>
+    <%- i %>
+<% } %>
 

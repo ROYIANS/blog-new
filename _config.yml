@@ -117,7 +117,12 @@ theme: maple
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: qcloud-cos
+  cosRegion: ap-hongkong
+  cosSecretId: AKIDugHeniOq31lHZhqthKkwteCXdXEi171V
+  cosSecretKey: LSPAh0LURBh4HH4g7MQQFrFXcVBfvxm2
+  cosBucket: blog-new
+  cosAppid: 1253393696
 
 feed:
   enable: true

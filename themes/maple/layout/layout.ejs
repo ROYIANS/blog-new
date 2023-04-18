@@ -5,11 +5,11 @@
 </head>
 <body class="heti--sans bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-200">
 <%- partial('_partial/header', { cache: true }) %>
-<main class="p-12">
+<main class="py-12 px-0 md:px-12">
     <%- body %>
 </main>
 <%- partial('_partial/footer', { cache: true }) %>
-<i class="fixed right-4 bottom-10 z-100 opacity-0 ri-skip-up-line" id="go-top"></i>
+<i class="fixed right-4 bottom-10 z-100 opacity-0 ri-skip-up-line text-2xl cursor-pointer" id="go-top"></i>
 <%- partial('_partial/after-footer') %>
 </body>
 

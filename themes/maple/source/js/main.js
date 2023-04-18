@@ -138,6 +138,7 @@ function registerCopyCode() {
 $(document).ready(function () {
   registerMobileMenu();
   registerGoTop();
+  window.initComment && initComment();
   if ($("#article-title").length > 0) {
     registerHeaderPageTitle();
     registerCopyCode();

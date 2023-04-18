@@ -28,7 +28,6 @@ concise but not simple hexo theme.
 - ⚗️ [MathJax Support](http://docs.mathjax.org/en/latest/)
 - ⚡️ [Mermaid Support](https://mermaid-js.github.io/mermaid)
 - 🖼️ [Fancybox Support](https://fancyapps.com/docs/ui/fancybox)
-- 🦜 [Giscus Support](https://giscus.app/zh-CN)
 - 📊 [ECharts Support](https://echarts.apache.org/)
 
 ![maple](https://cdn.jsdelivr.net/gh/xbmlz/static@main/img/Maple.png)
@@ -96,14 +95,5 @@ mermaid:
   enable: true
   # Available themes: default | dark | forest | neutral
   theme: default
-
-# giscus
-giscus:
-  enable: true
-  repo:
-  repo_id:
-  category:
-  category_id:
-  mapping:
 ```
 

@@ -223,3 +223,7 @@ nprogress_css:
   name: nprogress
   file: nprogress.css
   version: 0.2.0
+twikoojs:
+  name: twikoo
+  file: dist/twikoo.all.min.js
+  version: 1.6.11

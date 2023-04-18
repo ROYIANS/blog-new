@@ -1,15 +1,40 @@
 @import 'highlight.styl'
+@import "tk_comment.css"
 
 
 :root
   --c-bg: #ffffff
   --c-scrollbar: #d9d9d9
   --c-scrollbar-hover: #bbbbbb
+  --roy-theme: #009688
+  --roy-theme-op: #00968823;
+  --roy-white: #fff
+  --roy-card-bg: #fff
+  --roy-card-border: #3d3d3f
+  --roy-shadow-border: 0 8px 16px -4px #2c2d300c
+  --roy-fontcolor: #363636
+  --roy-background: #f7f9fe
+  --roy-main: var(--roy-theme)
+  --roy-secondtext: rgba(60, 60, 67, 0.6)
+  --roy-shadow-main: 0 8px 12px -3px var(--roy-main-op)
+  --roy-lighttext: var(--roy-main)
+  --roy-secondbg: #f1f3f8
+  --roy-shadow-black: 0 0 12px 4px rgba(0, 0, 0, .05)
+  --style-border-dashed: 1px dashed var(--roy-theme-op)
+  --roy-black: #000
 
 html.dark
   --c-bg: #212121
   --c-scrollbar: #333333
   --c-scrollbar-hover: #555555
+  --roy-card-bg: #1d1e22
+  --roy-card-border: #3d3d3f
+  --roy-shadow-border: 0 8px 16px -4px #00000050
+  --roy-fontcolor: #F7F7FA
+  --roy-background: #18171d
+  --roy-secondtext: #a1a2b8
+  --roy-lighttext: var(--roy-theme)
+  --roy-secondbg: #30343f
 
 a:hover
   color: #009688
