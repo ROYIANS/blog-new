@@ -15,7 +15,7 @@
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
     const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("class", isDark ? "ri-moon-clear-fill" : "ri-sun-fill");
+    $("#theme-icon").attr("class", isDark ? "ri-moon-fill" : "ri-sun-fill");
 
 
     // toggle dark mode
@@ -24,7 +24,7 @@
       isDark = !isDark;
       const setting = localStorage.getItem("hexo-color-scheme") || "auto";
       document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("class", isDark ? "ri-moon-clear-fill" : "ri-sun-fill");
+      $("#theme-icon").attr("class", isDark ? "ri-moon-fill" : "ri-sun-fill");
       if (prefersDark === isDark) {
         localStorage.setItem("hexo-color-scheme", "auto");
       } else {

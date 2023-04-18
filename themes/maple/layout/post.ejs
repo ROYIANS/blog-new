@@ -22,6 +22,15 @@
                     <span><%= min2read(page.content) %> min</span>
                     <span class="text-gray-400">·</span>
                     <span><%= wordcount(page.content) %> words</span>
+                    <% if(page.comment){ %>
+                        <span class="text-gray-400">·</span>
+                        <span class="post-meta-commentcount" title="评论数">
+                            <i class="fa-solid fa-message"></i>
+                            <a href="#twikoo">
+                                <span id="twikoo-count"><i class="ri-loader-4-line animate-spin inline-block"></i></span> comment
+                            </a>
+                        </span>
+                    <% } %>
                 </section>
             </div>
         </div>
