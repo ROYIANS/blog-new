@@ -1,0 +1,70 @@
+# Header
+nav:
+  归档: /archives
+  # Categories: /category
+  # Tags: /tag
+
+# favicon
+favicon: /images/royians/logo.png
+
+# logo
+logo: /images/royians/logo.png
+
+# links
+links:
+  Github: https://github.com/xbmlz
+  # ZhiHu:
+  # Twitter:
+  # Weibo:
+
+# analytics
+google_analytics:
+baidu_analytics:
+
+# mathjax
+fancybox: true
+
+# mathjax
+mathjax: true
+
+# echarts
+echarts: true
+
+# busuanzi
+busuanzi: true
+
+# mermaid
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme: default
+
+# giscus
+giscus:
+  enable:
+  repo:
+  repo_id:
+  category:
+  category_id:
+  mapping:
+
+# 非必要請不要修改
+CDN:
+  # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
+  # option: local/jsdelivr/unpkg/cdnjs/custom
+  # Dev version can only choose. ( dev版的主題只能設置為 local )
+  internal_provider: local
+
+  # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
+  # option: jsdelivr/unpkg/cdnjs/custom
+  third_party_provider: jsdelivr
+
+  # Add version number to url, true or false
+  version: true
+
+  # Custom format
+  # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format:
+
+  option:
+

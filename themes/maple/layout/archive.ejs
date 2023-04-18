@@ -1,0 +1,38 @@
+<section class="px-6 max-w-prose mx-auto gap-12 grid grid-cols-1">
+    <div class="flex flex-col h-48 items-center justify-center">
+        <h1 class="site-title heti--serif text-4xl leading-relaxed relative before:absolute before:block before:w-2 before:h-2 before:top-0 before:-right-2 before:rounded before:border-red-700 before:border-2 before:border-solid">
+            <%= (theme.site && theme.site.title) || config.title %>
+        </h1>
+        <p class="text-gray-500 mt-2">
+            <%= (theme.site && theme.site.subtitle) || config.subtitle %>
+        </p>
+    </div>
+    <% var last_year = ''; %>
+    <% page.posts.each(function (post) { %>
+        <% var cur_year = post.date.year(); %>
+        <% if(last_year !== cur_year){ %>
+            <div class="relative pointer-events-none">
+                <span class="text-9xl opacity-10 absolute -left-11 -top-6 font-bold"><%- cur_year %></span>
+            </div>
+        <% last_year = cur_year; } %>
+        <a href="<%- url_for(post.path) %>">
+            <header>
+                <h2 class="font-bold text-xl">
+                    <%- post.title %>
+                </h2>
+            </header>
+            <section class="text-gray-400 my-1 text-sm time">
+                <p class="line-clamp-4">
+                    <% if (post.excerpt) { %>
+                        <%= post.excerpt %>
+                    <% } %>
+                </p>
+                <p class="line-clamp-4">
+                    <%- date(post.date, 'MMM DD') %>
+                    ·
+                    <%= min2read(post.content) %> min
+                </p>
+            </section>
+        </a>
+    <% }) %>
+</section>
