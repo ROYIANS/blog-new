@@ -4,15 +4,13 @@
             <h1 class="heti--serif text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">友情链接</h1>
         </div>
     </header>
-    <% site.data.links.links.forEach(data => { %>
-        <h2><%= data.class_name %></h2>
-        <div class="flink-desc"><%= data.descr %></div>
-        <ul>
-            <% data.link_list.forEach(link => { %>
-                <li>
-                    <a href="<%= link.link %>"><%= link.name %></a>
-                </li>
-            <% }); %>
-        </ul>
-    <% }); %>
+    <div class="falling-text">
+        <% site.data.friends.forEach(friend => { %>
+            <a href="<%= friend.link %>" class="inline-flex transition-all m-2 bg-[#f6f6f6] dark:bg-[#222222] rounded-2xl justify-between items-center select-none cursor-pointer"
+                 data-link="<%= friend.link %>" data-desc="<%= friend.desc %>">
+                <img class="w-8 h-8 rounded-full" src="<%= friend.avatar %>" alt="<%= friend.name %>">
+                <span class="px-5"><%= friend.name %></span>
+            </a>
+        <% }); %>
+    </div>
 </section>

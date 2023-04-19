@@ -1,9 +1,9 @@
 # Header
 nav:
   留言: /comments
-  归档: /archives
-  标签: /tag
-  分类: /category
+  说说: /memos
+  标签: /tags
+  分类: /categories
   友链: /links
 
 # favicon
@@ -12,10 +12,17 @@ favicon: /images/royians/logo.png
 # logo
 logo: /images/royians/logo.png
 
+# avatar
+avatar: /images/royians/avatar.jpg
+
 title_font:
   enable: true,
   family: LDL
   font_size: 3.5rem
+
+memos:
+  url: https://vidorra.life
+  limit: 30
 
 # links
 links:

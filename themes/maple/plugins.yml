@@ -227,3 +227,11 @@ twikoojs:
   name: twikoo
   file: dist/twikoo.all.min.js
   version: 1.6.11
+matter_js:
+  name: matter-js
+  file: build/matter.min.js
+  version: 0.19.0
+marked_js:
+  name: marked
+  file: lib/marked.umd.min.js
+  version: 4.3.0

@@ -12,7 +12,9 @@
 <% if(config.description){ %>
     <meta name="description" content="<%- config.description %>">
 <% } %>
-<% if(config.keywords){ %>
+<% if(page.keywords){ %>
+    <meta name="keywords" content="<%- page.keywords %>">
+<% } else if (config.keywords) { %>
     <meta name="keywords" content="<%- config.keywords %>">
 <% } %>
 <%

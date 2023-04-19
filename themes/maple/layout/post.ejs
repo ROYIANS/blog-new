@@ -11,10 +11,8 @@
         <div class="pt-4 md:pt-6">
             <h1 id="article-title" class="heti--serif text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
                 <%- page.title %>
+                <span class="text-xs opacity-50 font-normal"><%- page.author || config.author %></span>
             </h1>
-            <p class="mb-6">
-                <%- page.excerpt %>
-            </p>
             <div>
                 <section class="flex items-center gap-3 text-sm">
                     <time><%- date(page.updated, "YYYY-MM-DD") %></time>
@@ -36,7 +34,7 @@
         </div>
     </header>
     <!-- content -->
-    <article class="heti text-lg post-content mt-10 prose dark:prose-invert post-content <%= page.sans ? '' : 'heti--serif' %>">
+    <article class="heti text-lg post-content mt-10 prose dark:prose-invert post-content <%= page.sans ? '' : 'heti--serif' %> <%= page.customClass %>">
         <%- page.content %>
     </article>
     <!-- tag -->
