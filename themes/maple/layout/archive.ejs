@@ -22,26 +22,26 @@
                 <span class="text-5xl opacity-10 absolute -left-4 -top-6 font-bold md:-left-11"><%- cur_year %> <%- cur_month %></span>
             </div>
         <% last_month = cur_month; last_year = cur_year } %>
-        <a href="<%- url_for(post.path) %>" class="flex justify-start">
-            <section class="text-gray-400 my-1 text-sm time w-12 whitespace-nowrap">
+        <a href="<%- url_for(post.path) %>" class="grid grid-cols-12 gap-4">
+            <section class="col-span-2 text-gray-400 my-1 text-sm time whitespace-nowrap">
                 <ul class="text-right">
                     <% post.categories.data.forEach(categories => { %>
                         <li class="leading-relaxed overflow-ellipsis overflow-hidden"><%= categories.name %></li>
                     <% }) %>
                 </ul>
             </section>
-            <section class="heti--serif text-4xl w-20 text-center">
+            <section class="col-span-2 heti--serif text-4xl text-center">
                 <%- `${cur_date}`.padStart(2, '0') %>
             </section>
-            <section>
+            <section class="col-span-8">
                 <header>
                     <h2 class="text-xl heti--serif">
                         <%- post.title %>
                     </h2>
                 </header>
                 <section class="text-gray-400 my-1 text-sm time">
-                    <p class="text-xs flex items-center">
-                        <span><%= post.author || config.author %></span>
+                    <p class="text-xs flex flex-wrap items-center whitespace-nowrap overflow-hidden">
+                        <span class=""><%= post.author || config.author %></span>
                         <span class="text-gray px-1">·</span>
                         <span class='opacity-50 before:opacity-70'><%= min2read(post.content) %>min</span>
                         <span class="text-gray px-1">·</span>
