@@ -69,7 +69,7 @@ function registerGoTop() {
 function registerCopyCode() {
   $("figure.highlight").each(function () {
     const copyIcon = $(
-      "<i class=\"ri-file-copy-line\"></i>"
+      "<i class=\"ri-file-copy-line\" title=\"复制代码\"></i>"
     );
     const leftOffset = 25;
     // left
@@ -79,6 +79,7 @@ function registerCopyCode() {
     $(copyIcon).css("left", `${left}px`);
     $(copyIcon).css("top", "15px");
     $(copyIcon).css("cursor", "pointer");
+    $(copyIcon).css("font-style", "normal");
     // add icon
     $(this).append(copyIcon);
     // copy code
@@ -109,7 +110,8 @@ function registerCopyCode() {
       ta.readOnly = false;
       var result = document.execCommand("copy");
       // change icon
-      $(this).attr("icon", result ? "carbon:checkmark" : "carbon:error");
+      $(this).attr("class", result ? "ri-check-fill" : "ri-close-fill");
+      dlf.toast("复制成功", "default", "ri-file-copy-2-fill")
       ta.blur(); // For iOS
       // blur
       $(copyIcon).blur();
@@ -120,7 +122,7 @@ function registerCopyCode() {
       document.body.removeChild(ta);
       // setTimeout change icon
       setTimeout(() => {
-        $(this).attr("icon", "carbon:copy");
+        $(this).attr("class", "ri-file-copy-line");
       }, 1000); // 1s
     });
 
@@ -135,9 +137,17 @@ function registerCopyCode() {
   });
 }
 
+function preventTouchGesture() {
+  // 阻止双指放大页面
+  document.addEventListener("gesturestart", function (event) {
+    event.preventDefault();
+  });
+}
+
 $(document).ready(function () {
   registerMobileMenu();
   registerGoTop();
+  preventTouchGesture()
   window.initComment && initComment();
   if ($("#article-title").length > 0) {
     registerHeaderPageTitle();

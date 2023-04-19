@@ -5,18 +5,6 @@
  * Author: Sivan [sun.sivan@gmail.com]
  */
 
-@font-face {
-  font-family: RoySans;
-  unicode-range: U+4E00-9FFF;
-  src: local('Sarasa Gothic SC'), local('Noto Sans'), local('Microsoft YaHei UI');
-}
-
-@font-face {
-  font-family: RoySans;
-  unicode-range: U+0020-007E;
-  src: local(Roboto), local('Segoe UI'), local(Arial);
-}
-
 .heti {
   /*max-width: 42em;*/
   font-size: 16px;
@@ -365,7 +353,7 @@
   margin-inline-start: .25em;
   margin-inline-end: .25em;
   font-size: .75em;
-  font-family: -apple-system, BlinkMacSystemFont, "RoySans", "Sarasa UI SC", "Noto Sans SC", "Helvetica Neue", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Sarasa Gothic SC", "Sarasa UI SC", "Noto Sans SC", "Helvetica Neue", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   line-height: 1;
   vertical-align: baseline
@@ -428,7 +416,7 @@
 }
 
 .heti, .heti--sans {
-  font-family: -apple-system, BlinkMacSystemFont, "RoySans", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: -apple-system, BlinkMacSystemFont, "Sarasa Gothic SC", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 
 .heti--serif {
@@ -449,11 +437,11 @@
 }
 
 .heti--classic figcaption, .heti--classic caption, .heti--classic th {
-  font-family: -apple-system, BlinkMacSystemFont, "RoySans", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: -apple-system, BlinkMacSystemFont, "Sarasa Gothic SC", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 
 .heti--hei {
-  font-family: -apple-system, BlinkMacSystemFont, "RoySans", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: -apple-system, BlinkMacSystemFont, "Sarasa Gothic SC", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 
 .heti--song {
@@ -667,7 +655,7 @@
   border-block-start: 1px solid;
   border-block-start-color: #ccc;
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "RoySans", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Sarasa Gothic SC", "Sarasa UI SC", "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 24px
 }
 

@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <%- partial('_plugins/google-analytics') %>
 <%- partial('_plugins/baidu-analytics') %>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=0, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <% if(config.author){ %>
     <meta name="author" content="<%- config.author %>">
@@ -40,14 +40,15 @@ if (is_archive()) {
     <link rel="icon" href="<%- url_for(theme.favicon) %>">
 <% } %>
 
-<%- css('css/main') %>
+<%- css(theme.asset.main_css) %>
 <%- css(theme.asset.nprogress_css) %>
-<%- css('lib/heti/heti.css') %>
+<%- css(theme.asset.heti_custom_css) %>
 
 <%- css(theme.asset.remixicon)  %>
 
 <%- js(theme.asset.jquery) %>
 <%- js(theme.asset.heti_add_on_js) %>
+<%- js(theme.asset.utils) %>
 
 <% if(theme.twikoo.enable){ %>
     <%- js(theme.asset.twikoojs) %>

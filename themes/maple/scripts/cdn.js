@@ -14,14 +14,9 @@ hexo.extend.filter.register('before_generate', () => {
 
   const thirdPartySrc = hexo.render.renderSync({ path: path.join(hexo.theme_dir, '/plugins.yml'), engine: 'yaml' })
   const internalSrc = {
-    main: {
+    main_js: {
       name: 'hexo-theme-dreamland-book',
       file: 'js/main.js',
-      version
-    },
-    variable: {
-      name: 'hexo-theme-dreamland-book',
-      file: 'js/variable.js',
       version
     },
     utils: {
@@ -29,19 +24,9 @@ hexo.extend.filter.register('before_generate', () => {
       file: 'js/utils.js',
       version
     },
-    translate: {
+    heti_custom_css: {
       name: 'hexo-theme-dreamland-book',
-      file: 'js/tw_cn.js',
-      version
-    },
-    local_search: {
-      name: 'hexo-theme-dreamland-book',
-      file: 'js/search/local-search.js',
-      version
-    },
-    algolia_js: {
-      name: 'hexo-theme-dreamland-book',
-      file: 'js/search/algolia.js',
+      file: 'css/heti/heti.css',
       version
     }
   }
@@ -59,7 +44,7 @@ hexo.extend.filter.register('before_generate', () => {
       const cdnjs_file = file.replace(/^[lib|dist]*\/|browser\//g, '')
       const min_cdnjs_file = minFile(cdnjs_file)
       if (cond === 'internal') file = `source/${file}`
-      const verType = CDN.version ? (type === 'local' ? `?v=${version}` : `@${version}`) : ''
+      const verType = CDN.version ? (type === 'local' ? '' : `@${version}`) : ''
 
       const value = {
         version,
@@ -82,7 +67,7 @@ hexo.extend.filter.register('before_generate', () => {
       data[key] = cdnSource[type]
     })
 
-    if (cond === 'internal') data.main_css = 'css/main.css' + (CDN.version ? `?v=${version}` : '')
+    if (cond === 'internal') data.main_css = 'css/main.css'
     return data
   }
 

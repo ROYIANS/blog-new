@@ -17,7 +17,7 @@
             </p>
             <div>
                 <section class="flex items-center gap-3 text-sm">
-                    <time><%- date(page.updated, "YYYY-MM-DD HH:mm:ss") %></time>
+                    <time><%- date(page.updated, "YYYY-MM-DD") %></time>
                     <span class="text-gray-400">·</span>
                     <span><%= min2read(page.content) %> min</span>
                     <span class="text-gray-400">·</span>
@@ -36,7 +36,7 @@
         </div>
     </header>
     <!-- content -->
-    <article class="heti post-content mt-10 prose dark:prose-invert post-content <%= page.sans ? '' : 'heti--serif' %>">
+    <article class="heti text-lg post-content mt-10 prose dark:prose-invert post-content <%= page.sans ? '' : 'heti--serif' %>">
         <%- page.content %>
     </article>
     <!-- tag -->
