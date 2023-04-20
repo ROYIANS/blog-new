@@ -2,15 +2,24 @@
     <header class="overflow-hidden pt-6 pb-6 md:pt-12">
         <div class="pt-4 md:pt-6">
             <h1 class="heti--serif text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">友情链接</h1>
+            <span class="text-sm">申请友链请下方评论</span>
         </div>
     </header>
-    <div class="falling-text">
-        <% site.data.friends.forEach(friend => { %>
-            <a href="<%= friend.link %>" class="inline-flex transition-all m-2 bg-[#f6f6f6] dark:bg-[#222222] rounded-2xl justify-between items-center select-none cursor-pointer"
-                 data-link="<%= friend.link %>" data-desc="<%= friend.desc %>">
-                <img class="w-8 h-8 rounded-full" src="<%= friend.avatar %>" alt="<%= friend.name %>">
-                <span class="px-5"><%= friend.name %></span>
-            </a>
-        <% }); %>
-    </div>
+    <%
+    const TAGS = []
+    site.data.friends.forEach(item => {
+        TAGS.push({
+            path: item.link,
+            name: item.name,
+            avatar: item.avatar,
+            desc: item.desc
+        })
+    })
+    %>
+    <%- partial('_component/InfiniteLoopSlider', { tagList: TAGS, isFriend: true }) %>
+    <!-- comment -->
+    <% if(theme.twikoo.enable){ %>
+        <div id="comment" class="article-comments mt-12"></div>
+        <%- partial('_plugins/twikoo') %>
+    <% } %>
 </section>
