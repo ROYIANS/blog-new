@@ -1,6 +1,7 @@
 @import "highlight.css";
 @import "toast.css";
 @import "tk_comment.css";
+@import "post.css";
 
 @tailwind base;
 @tailwind components;
@@ -27,6 +28,7 @@
   --roy-shadow-black: 0 0 12px 4px rgba(0, 0, 0, .05);
   --style-border-dashed: 1px dashed var(--roy-theme-op);
   --roy-black: #000;
+  --wp--preset--color--custom-light-color: #828282;
 }
 
 html.dark {
@@ -41,6 +43,11 @@ html.dark {
   --roy-secondtext: #a1a2b8;
   --roy-lighttext: var(--roy-theme);
   --roy-secondbg: #30343f;
+  --wp--preset--color--custom-light-color: #989898;
+}
+
+* {
+  text-shadow: 0 0 1.25px var(--wp--preset--color--custom-light-color);
 }
 
 a:hover {
