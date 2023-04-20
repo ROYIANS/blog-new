@@ -17,15 +17,25 @@ how to add a category page:
 <% if(is_category()){ %>
     <%- partial('archive', { pagination: config.category, index: true, title: page.category }) %>
 <% } else { %>
-    <div class="px-6 max-w-prose mx-auto md:px-0 mt-6">
-        <h2 class="font-bold text-2xl">Categories</h2>
-        <ul class="mt-2">
-            <% site.categories.forEach(category =>{ %>
-                <li class="mt-2">
-                    <a href="<%- url_for(category.path) %>"> <%- category.name %></a>
-                    <span>(<%- category.posts.length %>)</span>
-                </li>
-            <% }) %>
-        </ul>
-    </div>
+    <section class="px-6 max-w-prose mx-auto md:px-0">
+        <!-- header -->
+        <header class="overflow-hidden pt-6 pb-6 md:pt-12">
+            <div class="pt-4 md:pt-6">
+                <h1 id="article-title" class="heti--serif text-[2rem] font-bold leading-snug mb-4 md:mb-6 md:text-[2.6rem]">
+                    Categories
+                </h1>
+            </div>
+        </header>
+        <%
+            const TAGS = []
+            site.categories.forEach(item => {
+                TAGS.push({
+                    path: item.path,
+                    name: item.name,
+                    length: item.posts.length
+                })
+            })
+        %>
+        <%- partial('_component/InfiniteLoopSlider', {tagList: TAGS}) %>
+    </section>
 <% } %>
