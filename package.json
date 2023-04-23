@@ -13,6 +13,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^1.0.0",
@@ -21,6 +22,7 @@
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
+    "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^6.0.0",
@@ -31,7 +33,6 @@
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
     "tailwindcss": "^3.3.1",
-    "tailwindcss-typography": "^3.1.0",
-    "autoprefixer": "^10.4.14"
+    "tailwindcss-typography": "^3.1.0"
   }
 }
