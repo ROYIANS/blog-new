@@ -588,7 +588,7 @@
   color: rgb(226 232 240/var(--tw-text-opacity))
 }
 
-.DocSearch-StartScreen .DocSearch-Help {
+.DocSearch-StartScreen .DocSearch-Help, .DocSearch-Dropdown .DocSearch-Help {
   padding: 4rem 1.5rem;
   text-align: center;
   --tw-text-opacity: 1;

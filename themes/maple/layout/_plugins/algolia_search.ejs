@@ -43,6 +43,27 @@
                 __is_last: () => index === items.length - 1 && index !== 0,
               }
             })
+          },
+          hitComponent: ({ hit, children }) => {
+            const className = `${(hit.__is_result && hit.__is_result()) ? 'DocSearch-Hit--Result ': ''}` +
+                              `${(hit.__is_parent && hit.__is_parent()) ? 'DocSearch-Hit--Parent ': ''}` +
+                              `${(hit.__is_first && hit.__is_first()) ? 'DocSearch-Hit--FirstChild ': ''}` +
+                              `${(hit.__is_last && hit.__is_last()) ? 'DocSearch-Hit--LastChild ': ''}` +
+                              `${(hit.__is_child && hit.__is_child()) ? 'DocSearch-Hit--Child ': ''}`
+            return {
+              $$typeof: children.$$typeof,
+              constructor: undefined,
+              key: Math.floor(Math.random() * 10000),
+              type: 'a',
+              props: {
+                children: children,
+                class: className,
+                className: className,
+                href: hit.url
+              },
+              ref: undefined,
+              __v: null
+            }
           }
         }))
 
