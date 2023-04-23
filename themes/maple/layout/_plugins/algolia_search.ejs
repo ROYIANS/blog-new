@@ -1,6 +1,6 @@
 <% if (theme.algolia_search && theme.algolia_search.enable) { %>
     <div id="docsearch" class="hidden"></div>
-    <%- css(theme.asset.docsearch_css) %>
+    <%- css(theme.asset.doc_search_custom_css) %>
     <%- js(theme.asset.docsearch_js) %>
 
     <script>
@@ -10,6 +10,40 @@
           apiKey: '<%= config.algolia.apiKey %>',
           indexName: '<%= config.algolia.indexName %>',
           container: '#docsearch',
+          placeholder: '<%= _p('search.title') %>...',
+          transformItems: (items) => {
+            return items.map((item, index) => {
+              // We transform the absolute URL into a relative URL to
+              // leverage Next's preloading.
+              const a = document.createElement('a')
+              a.href = item.url
+
+              const hash = a.hash === '#content-wrapper' || a.hash === '#header' ? '' : a.hash
+
+              if (item.hierarchy?.lvl0) {
+                item.hierarchy.lvl0 = item.hierarchy.lvl0.replace(/&amp;/g, '&')
+              }
+
+              if (item._highlightResult?.hierarchy?.lvl0?.value) {
+                item._highlightResult.hierarchy.lvl0.value =
+                  item._highlightResult.hierarchy.lvl0.value.replace(/&amp;/g, '&')
+              }
+
+              return {
+                ...item,
+                url: `${a.pathname}${hash}`,
+                __is_result: () => true,
+                __is_parent: () => item.type === 'lvl1' && items.length > 1 && index === 0,
+                __is_child: () =>
+                  item.type !== 'lvl1' &&
+                  items.length > 1 &&
+                  items[0].type === 'lvl1' &&
+                  index !== 0,
+                __is_first: () => index === 1,
+                __is_last: () => index === items.length - 1 && index !== 0,
+              }
+            })
+          }
         }))
 
 
