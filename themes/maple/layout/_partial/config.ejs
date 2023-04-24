@@ -51,6 +51,9 @@
 <script>
   var GLOBAL_CONFIG = {
     root: '<%= config.root %>',
+    isHome: <%- is_home() %>,
+    isPage: <%- is_page() %>,
+    isPost: <%- is_post() %>,
     logo: '<%= theme.favicon || config.favicon %>',
     algolia: <%- algolia %>,
     translate: <%- translate %>,
