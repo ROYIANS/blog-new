@@ -1,6 +1,6 @@
 ---
 title: 解决 ChunkLoadError Loading chunk xx failed 报错
-categories: 随记
+categories: [随记]
 tag:
   - 前端
   - Vue.js

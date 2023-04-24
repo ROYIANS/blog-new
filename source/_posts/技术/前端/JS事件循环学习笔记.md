@@ -1,6 +1,6 @@
 ---
 title: JS 事件循环学习笔记
-categories: 随记
+categories: [随记]
 tag:
   - 前端
   - JavaScript

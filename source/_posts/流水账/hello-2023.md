@@ -1,7 +1,7 @@
 ---
 title: Hello 2023
-categories: 随笔
-tag: 随想
+categories: [随笔]
+tag: [随想]
 cover: /images/covers/2023/03/2023.webp
 abbrlink: a7cb0afa
 cc: 原创
