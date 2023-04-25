@@ -1,17 +1,32 @@
 <script>
-  var CODE_MAX_HEIGHT = 200;
+  var CODE_MAX_HEIGHT = 500;
   var containers = [];
   // 展开
   $('body').on('click', '.js_unfold_code_btn', function () {
     $(this).closest('.js_highlight_container').addClass('on');
     $(this).css('display', 'none')
     $(this).next().css('display', 'flex')
+    $(this).closest('.highlight-footer').css('width', '3rem')
+    $(this).closest('.highlight-footer').css('opacity', '0.7')
+    $(this).closest('.highlight-footer').css('bottom', '0.5em')
   });
   // 收起
   $('body').on('click', '.js_retract_code_btn', function () {
-    $(this).closest('.js_highlight_container').removeClass('on');
+    var $container = $(this).parent().parent().removeClass('on');
     $(this).css('display', 'none')
     $(this).prev().css('display', 'flex')
+    $(this).closest('.highlight-footer').css('width', 'calc(100% - 1em)')
+    $(this).closest('.highlight-footer').css('opacity', '1')
+    $(this).closest('.highlight-footer').css('bottom', '0')
+    var winTop = $(window).scrollTop();
+    var offsetTop = $container.offset().top;
+    $(this).css('top', 0);
+    if (winTop > offsetTop) {
+      // 设置滚动条位置
+      $('body, html').animate({
+        scrollTop: $container.offset().top - CODE_MAX_HEIGHT
+      }, 600);
+    }
   });
 
   // 添加隐藏容器
@@ -24,7 +39,7 @@
       `
     <div class="highlight-footer">
       <a class="js_unfold_code_btn show-btn" href="javascript:;">展开代码<i class="ri-skip-down-line"></i></a>
-      <a class="js_retract_code_btn hide-btn" style="display: none" href="javascript:;"><i class="ri-skip-up-line"></i>收起代码</a>
+      <a class="js_retract_code_btn hide-btn" style="display: none" href="javascript:;"><i class="ri-skip-up-line"></i></a>
     </div>
   `
     );
@@ -63,7 +78,7 @@
 <style>
   .highlight-container {
     position: relative;
-    background-color: highlight-background;
+    background-color: transparent;
   }
 
   .highlight-container.on .hide-btn {
@@ -76,7 +91,7 @@
 
   .highlight-container .highlight-wrap {
     overflow: hidden;
-    max-height: 200px;
+    max-height: 500px;
   }
 
   .dark .highlight-container .highlight-footer {
@@ -88,7 +103,7 @@
     position: absolute;
     margin: 0 0.5em;
     width: calc(100% - 1em);
-    left: 0;
+    right: 0;
     bottom: 0;
     height: 40px;
     text-align: center;
@@ -98,7 +113,7 @@
   }
 
   .highlight-container .show-btn, .highlight-container .hide-btn {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -138,7 +153,7 @@
 
   .highlight-container .js_unfold_code_btn:hover,
   .highlight-container .js_retract_code_btn:hover {
-    border-bottom-color: none !important;
+    border-bottom-color: transparent !important;
   }
 
   .highlight-container + blockquote {
