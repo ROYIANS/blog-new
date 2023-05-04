@@ -10,6 +10,7 @@ recommend: false
 date: 2023-04-24
 abbrlink: 2023042401
 cover: /images/covers/2023/04/2401.webp
+archive: true
 ---
 
 之前用过 Algolia 服务（Free Plan），使用效果很好。但是展示的搜索结果并不是结构化的。最近网上冲浪的时候发现了一个项目，可以使 Algolia 的搜索结果更具有结构化。
