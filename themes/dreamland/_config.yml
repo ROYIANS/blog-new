@@ -131,4 +131,5 @@ CDN:
 extends:
   head: # 在head中插入
     - <link href="/fonts/LDL/LDL.css" rel="stylesheet">
+    - <meta name="baidu-site-verification" content="codeva-fCRpJWFFlr" />
   body: # 在body中插入
