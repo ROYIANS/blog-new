@@ -24,7 +24,7 @@
         <li class="heti--serif book-article ml-24 text-base my-2.5 font-light">
             <a href="<%= url_for(article.path) %>" title="<%= article.title %>" class="flex justify-between">
                 <span><%= article.title %></span>
-                <span>
+                <span class="whitespace-nowrap">
                     <span class="px-2">/</span>
                     <%= `${curIndex}`.padStart(3, '0') %>
                 </span>
