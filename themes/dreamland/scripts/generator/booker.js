@@ -40,18 +40,16 @@ function generateChapters(dirPath, level, bookTitle, bookPath) {
     if (stats.isDirectory()) {
       // 是目录则递归处理子章节
       const subChapters = generateChapters(filePath, level + 1, bookTitle, bookPath);
-      if (subChapters.chapters.length > 0 || subChapters.articles.length > 0) {
-        // 处理章节信息...
-        const indexFile = path.join(filePath, 'index.md');
-        const content = fs.readFileSync(indexFile, 'utf-8');
-        const data = matter(content).attributes
-        // 将子章节合并到父章节中
-        chapters.push({
-          level: level + 1,
-          ...data,
-          ...subChapters
-        });
-      }
+      // 处理章节信息...
+      const indexFile = path.join(filePath, 'index.md');
+      const content = fs.readFileSync(indexFile, 'utf-8');
+      const data = matter(content).attributes
+      // 将子章节合并到父章节中
+      chapters.push({
+        level: level + 1,
+        ...data,
+        ...subChapters
+      });
     } else if (stats.isFile()) {
       const extname = path.extname(filePath);
       const basename = path.basename(filePath)

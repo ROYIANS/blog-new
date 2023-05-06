@@ -2,7 +2,8 @@
     <div class="w-full">
         <% let bookCategory = Object.keys(books) %>
         <% let letterGroup = category_by_pinyin_letter(bookCategory) %>
-        <% let letterGroupKeys = Object.keys(letterGroup) %>
+        <% let letterGroupKeys = Object.keys(letterGroup).sort() %>
+        <!--        <% console.log(letterGroupKeys, letterGroup, bookCategory) %>-->
         <% letterGroupKeys.forEach(letterKey => { %>
             <% const groupBookCategory = letterGroup[letterKey] %>
             <div class="w-full opacity-30 text-xs py-5 relative">
@@ -12,7 +13,7 @@
             <div class="w-full">
                 <% groupBookCategory.forEach(categoryKey => { %>
                     <% const booksList = books[categoryKey] %>
-                    <div class="heti--serif w-full text-2xl font-black pb-5">
+                    <div class="heti--serif w-full text-2xl font-black py-5">
                         <%= categoryKey %>
                     </div>
                     <div class="w-full grid grid-cols-2 md:grid-cols-5">
