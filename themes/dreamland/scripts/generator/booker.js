@@ -2,6 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('front-matter');
 
+const i18n = (str) => {
+  return hexo.theme.i18n._p(hexo.theme.i18n.languages)(str)
+}
+
 const getUuid = (len = 20, radix) => {
   let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
   let uuid = [],
@@ -83,7 +87,9 @@ hexo.extend.generator.register('booker', function (locals) {
 
   const postDir = hexo.source_dir + '_posts';
 
-  const books = [];
+  const books = {};
+
+  const allBooks = []
 
   // 读取_post目录下的所有文件和目录
   const files = fs.readdirSync(postDir);
@@ -102,25 +108,30 @@ hexo.extend.generator.register('booker', function (locals) {
         const content = fs.readFileSync(indexFile, 'utf-8');
         const data = matter(content).attributes;
         const bookPath = `books/${file}/`
-        books.push({
+        let category = data.category || i18n('books.uncategorized')
+        let booksCategory = books[category] || []
+        const book = {
           id: getUuid(),
           path: bookPath,
           level: 0,
           ...data,
+          category: data.category || i18n('books.uncategorized'),
           ...generateChapters(filePath, 0, data.title, bookPath)
-        })
+        }
+        booksCategory.push(book)
+        allBooks.push(book)
+        // 处理完所有文件和目录之后，books数组就包含了所有书籍的信息
+        booksCategory.sort((a, b) => a.order - b.order);
+        books[category] = booksCategory
       }
     }
   }
-
-  // 处理完所有文件和目录之后，books数组就包含了所有书籍的信息
-  books.sort((a, b) => a.order - b.order);
 
 
   locals.data.books = books;
 
   // TODO: 看看有没有简便的取法
-  const bookTitle = hexo.theme.i18n._p(hexo.theme.i18n.languages)('books.title')
+  const bookTitle = i18n('books.title')
 
   return [
     {
@@ -129,10 +140,11 @@ hexo.extend.generator.register('booker', function (locals) {
       data: {
         title: bookTitle,
         type: 'books',
-        books: books
+        books: books,
+        allBooks: allBooks
       }
     },
-    ...books.map(book => {
+    ...allBooks.map(book => {
       return {
         path: book.path,
         layout: 'page',
