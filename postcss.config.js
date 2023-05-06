@@ -11,7 +11,7 @@ module.exports = {
   from: undefined,
   plugins: {
     'postcss-import': {
-      root: './themes/maple/source/css/'
+      root: './themes/dreamland/source/css/'
     },
     tailwindcss: {},
     autoprefixer: {}

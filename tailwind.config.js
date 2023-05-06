@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./themes/maple/layout/**/*.ejs'],
+  content: ['./themes/dreamland/layout/**/*.ejs'],
   darkMode: 'class',
   theme: {
     textShadow: {},
