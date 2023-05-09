@@ -46,12 +46,12 @@ careers:
     - school: TYUT
       color: '#0189ff'
       major: 软件工程
-  image: /images/siteinfo/transparent_cloud.png
+  image: https://img.vidorra.life/images/siteinfo/transparent_cloud.png
 personalities:
   tips: 性格
   title: 提倡者
   type: INFJ-A
-  image: /images/siteinfo/infj.webp
+  image: https://img.vidorra.life/images/siteinfo/infj.webp
   linkText: 16personalities
   typeLink: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
   typeName: 提倡者

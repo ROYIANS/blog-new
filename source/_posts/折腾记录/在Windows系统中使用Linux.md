@@ -8,7 +8,7 @@ comment: true
 recommend: false
 date: 2020-02-16
 abbrlink: 2020021601
-cover: /images/covers/2023/04/2101.webp
+cover: https://img.vidorra.life/images/covers/2023/04/2101.webp
 ---
 
 > 最开始学习Linux时使用的是VM Ware虚拟机装的CentOS，之后折腾电脑双系统，先后使用了凤凰OS（PC上的Android X86项目），和Deepin Linux系统。在之后有了自己的网站，就开始折腾服务器，在vultr上开启了我的CentOS 7系统，在Windows上使用XShell连接。再后来博客迁移到了Github托管，服务器放着太费钱，我就退掉了。

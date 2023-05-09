@@ -4,7 +4,7 @@ tag:
   - 随记
   - 前端
   - CSS3
-cover: /images/covers/2023/01/0901.webp
+cover: https://img.vidorra.life/images/covers/2023/01/0901.webp
 abbrlink: 2023010901
 date: 2023-01-09
 recommend: true

@@ -119,8 +119,8 @@ theme: dreamland
 deploy:
   type: qcloud-cos
   cosRegion: ap-hongkong
-  cosSecretId: AKIDugHeniOq31lHZhqthKkwteCXdXEi171V
-  cosSecretKey: LSPAh0LURBh4HH4g7MQQFrFXcVBfvxm2
+  cosSecretId: AKID21ylV2LQHH5uU2OevysWvJRKJTRCmJfo
+  cosSecretKey: ye6LMDpHduyoVAC5mFUgjYUKBsL7g05y
   cosBucket: blog-new
   cosAppid: 1253393696
 

@@ -8,7 +8,7 @@ comment: true
 recommend: false
 date: 2023-04-24
 abbrlink: 2023042401
-cover: /images/covers/2023/04/2401.webp
+cover: https://img.vidorra.life/images/covers/2023/04/2401.webp
 archive: true
 ---
 

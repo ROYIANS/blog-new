@@ -4,7 +4,7 @@ tag:
   - 前端
   - JavaScript
   - 随记
-cover: /images/covers/2023/01/0401.webp
+cover: https://img.vidorra.life/images/covers/2023/01/0401.webp
 abbrlink: 2023010401
 date: 2023-01-04
 recommend: true
