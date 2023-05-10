@@ -134,7 +134,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: /img/royians/logo.png
+  icon: https://img.vidorra.life/img/royians/logo.png
   autodiscovery: true
   template:
 
@@ -154,3 +154,31 @@ algolia:
     - tags
     - title
     - says
+
+douban:
+  id: 218326172
+  builtin: false
+  item_per_page: 10
+  meta_max_line: 4
+  customize_layout: page
+  book:
+    path: reading/index.html
+    title: '我读'
+    quote: '下面是豆瓣阅读的书单'
+    option:
+  movie:
+    path: watching/index.html
+    title: '我看'
+    quote: '下面是豆瓣影视的影视剧列表'
+    option:
+  game:
+    path: playing/index.html
+    title: '我玩'
+    quote: '下面是豆瓣游戏的游戏列表'
+    option:
+  song:
+    path: listening/index.html
+    title: '我听'
+    quote: '下面是豆瓣音乐的音乐列表'
+    option:
+  timeout: 10000
