@@ -69,7 +69,12 @@ function generateChapters(dirPath, level, bookTitle, bookPath) {
     }
   }
 
-  articles.sort((a, b) => b.date - a.date);
+  articles.sort((a, b) => {
+    if (a.order && b.order) {
+      return a.order - b.order
+    }
+    return b.date - a.date
+  });
   // 按照章节顺序排序
   chapters.sort((a, b) => a.order - b.order);
 
