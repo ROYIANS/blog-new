@@ -6,7 +6,7 @@
 <div id="bber-tips" style="color: var(--heo-secondtext);">- 只展示最近<%= theme.memos.limit %>条说说 -</div>
 
 <script>
-  fetch("<%= theme.memos.url %>/api/memo/all?limit=<%= theme.memos.limit %>").then(resp => {
+  fetch("<%= theme.memos.url %>/api/v1/memo/all?limit=<%= theme.memos.limit %>").then(resp => {
     if (resp && resp.ok) {
       resp.json().then(res => {
         const { data } = res;
