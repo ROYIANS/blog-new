@@ -20,7 +20,7 @@
     "hexo-algoliasearch": "^1.0.0",
     "hexo-blog-encrypt": "^3.1.9",
     "hexo-deployer-qcloud-cos": "^1.0.5",
-    "hexo-douban": "^2.2.1",
+    "hexo-douban": "^2.2.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-sitemap": "^3.0.1",
