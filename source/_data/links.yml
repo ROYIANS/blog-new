@@ -2,6 +2,9 @@ banner:
   - link: http://106.55.229.185/
     name: 小石头岛
     avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
+  - link: https://meuicat.com/
+    name: 爱吃肉的猫
+    avatar: https://s1.ax1x.com/2023/07/07/pCc1TSO.jpg
   - link: https://kanochan.net/
     name: kano酱的博客
     avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
@@ -30,6 +33,10 @@ links:
         name: 小石头岛
         avatar: https://s2.loli.net/2022/01/12/eRIOiDxQHKg9G8A.gif
         descr: 欢迎光临小石石石头岛
+      - link: https://meuicat.com/
+        name: 爱吃肉的猫
+        avatar: https://s1.ax1x.com/2023/07/07/pCc1TSO.jpg
+        descr: 有肉有猫有生活.
       - link: https://kanochan.net/
         name: kano酱的博客
         avatar: https://s4.ax1x.com/2022/01/26/7LayqS.png
