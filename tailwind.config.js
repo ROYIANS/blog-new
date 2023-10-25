@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       colors: {
         'background': {
-          DEFAULT: '#f0f0f0',
-          dark: '#222222'
+          DEFAULT: '#FFFFFF',
+          dark: '#000000'
         },
         'page-bg': {
           DEFAULT: '#fafafa',
